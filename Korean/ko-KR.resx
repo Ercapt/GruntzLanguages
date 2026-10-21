@@ -251,6 +251,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>게임 버전이 서버보다 높습니다. 서버가 업데이트와 함께 재시작될 때까지 기다린 후 다시 참가하십시오.</value>
   <comment>YOUR GAME IS AHEAD OF THE SERVER. WAIT FOR THE SERVER TO RESTART WITH THE UPDATE, THEN JOIN AGAIN.</comment>
 </data>
+<data name="MainMenu.AhwooRequiredTitle" xml:space="preserve">
+  <value>AHWOO ACCOUNT REQUIRED</value>
+  <comment>AHWOO ACCOUNT REQUIRED</comment>
+</data>
+<data name="MainMenu.AhwooRequiredLine" xml:space="preserve">
+  <value>THIS SERVER REQUIRES AN AHWOO ACCOUNT. SIGN IN TO THE AHWOO CLIENT AND RECONNECT.</value>
+  <comment>THIS SERVER REQUIRES AN AHWOO ACCOUNT. SIGN IN TO THE AHWOO CLIENT AND RECONNECT.</comment>
+</data>
 <data name="MainMenu.CloseLabel" xml:space="preserve">
   <value>닫기</value>
   <comment>CLOSE</comment>
@@ -999,6 +1007,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{TARGET}이(가) 엘리베이터에 짓눌립니다!</value>
   <comment>The {TARGET} is crushed by the elevator!</comment>
 </data>
+<data name="Chat.DoorCrush" xml:space="preserve">
+  <value>The {TARGET} is crushed by the {USED}!</value>
+  <comment>The {TARGET} is crushed by the {USED}!</comment>
+</data>
+<data name="Chat.VehicleCrush" xml:space="preserve">
+  <value>The {TARGET} is crushed under the {USED}!</value>
+  <comment>The {TARGET} is crushed under the {USED}!</comment>
+</data>
 <data name="Chat.GestationCough" xml:space="preserve">
   <value>{ACTOR}이(가) 기침합니다.</value>
   <comment>{ACTOR} coughs.</comment>
@@ -1043,6 +1059,46 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{ACTOR}이(가) 구멍 위에 새 판을 용접합니다.</value>
   <comment>{ACTOR} welds new plating over the hole.</comment>
 </data>
+<data name="Chat.DrunkDropSelf" xml:space="preserve">
+  <value>You fumble and drop what you were holding.</value>
+  <comment>You fumble and drop what you were holding.</comment>
+</data>
+<data name="Chat.DrunkDropOther" xml:space="preserve">
+  <value>{ACTOR} fumbles and drops what they were holding.</value>
+  <comment>{ACTOR} fumbles and drops what they were holding.</comment>
+</data>
+<data name="Chat.DrunkFallSelf" xml:space="preserve">
+  <value>You stagger and fall over.</value>
+  <comment>You stagger and fall over.</comment>
+</data>
+<data name="Chat.DrunkFallOther" xml:space="preserve">
+  <value>{ACTOR} staggers and falls over.</value>
+  <comment>{ACTOR} staggers and falls over.</comment>
+</data>
+<data name="Chat.DrunkPassOutSelf" xml:space="preserve">
+  <value>You pass out.</value>
+  <comment>You pass out.</comment>
+</data>
+<data name="Chat.DrunkPassOutOther" xml:space="preserve">
+  <value>{ACTOR} passes out.</value>
+  <comment>{ACTOR} passes out.</comment>
+</data>
+<data name="Chat.VomitSelf" xml:space="preserve">
+  <value>You throw up.</value>
+  <comment>You throw up.</comment>
+</data>
+<data name="Chat.VomitOther" xml:space="preserve">
+  <value>{ACTOR} throws up.</value>
+  <comment>{ACTOR} throws up.</comment>
+</data>
+<data name="Chat.NarcoticPassOutSelf" xml:space="preserve">
+  <value>Your eyes roll back and the room goes away.</value>
+  <comment>Your eyes roll back and the room goes away.</comment>
+</data>
+<data name="Chat.NarcoticPassOutOther" xml:space="preserve">
+  <value>{ACTOR}'s eyes roll back and they slump.</value>
+  <comment>{ACTOR}'s eyes roll back and they slump.</comment>
+</data>
 <data name="Chat.SurgeryBegin" xml:space="preserve">
   <value>{ACTOR}이(가) {TARGET}에게 {OP}을(를) 시작합니다.</value>
   <comment>{ACTOR} begins {OP} on {TARGET}.</comment>
@@ -1083,18 +1139,6 @@ The file is looked up beside this language file first, then under the game's Con
   <value>누군가</value>
   <comment>Someone</comment>
 </data>
-<data name="Chat.LocalTab" xml:space="preserve">
-  <value>지역</value>
-  <comment>LOCAL</comment>
-</data>
-<data name="Chat.GlobalTab" xml:space="preserve">
-  <value>전체</value>
-  <comment>GLOBAL</comment>
-</data>
-<data name="Chat.GlobalPrefix" xml:space="preserve">
-  <value>[G] {NAME}: {TEXT}</value>
-  <comment>[G] {NAME}: {TEXT}</comment>
-</data>
 <data name="Chat.SaysOpen" xml:space="preserve">
   <value>{NAME}이(가) 말합니다: "{TEXT}"</value>
   <comment>{NAME} says "{TEXT}"</comment>
@@ -1107,6 +1151,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{NAME}이(가) 속삭입니다: "{TEXT}"</value>
   <comment>{NAME} whispers "{TEXT}"</comment>
 </data>
+<data name="Chat.SlursOpen" xml:space="preserve">
+  <value>{NAME} slurs "{TEXT}"</value>
+  <comment>{NAME} slurs "{TEXT}"</comment>
+</data>
 <data name="Chat.UnheardSuffix" xml:space="preserve">
   <value>이(가) 무언가 말하지만 들리지 않습니다.</value>
   <comment> talks but you cannot hear them.</comment>
@@ -1118,6 +1166,118 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Chat.EmoteUnknownSuffix" xml:space="preserve">
   <value>'{KEY}' 감정 표현은 존재하지 않습니다. *help를 말하면 목록을 볼 수 있습니다.</value>
   <comment>'{KEY}' emote does not exist. Say *help for a list.</comment>
+</data>
+<data name="Chat.RadioPrefix" xml:space="preserve">
+  <value>[R] {NAME}: {TEXT}</value>
+  <comment>[R] {NAME}: {TEXT}</comment>
+</data>
+<data name="Chat.ClientNoticePrefix" xml:space="preserve">
+  <value>// </value>
+  <comment>// </comment>
+</data>
+<data name="Chat.NewLinesPill" xml:space="preserve">
+  <value>v {COUNT} NEW</value>
+  <comment>v {COUNT} NEW</comment>
+</data>
+<data name="Chat.SayTab" xml:space="preserve">
+  <value>SAY</value>
+  <comment>SAY</comment>
+</data>
+<data name="Chat.RadioTab" xml:space="preserve">
+  <value>RADIO</value>
+  <comment>RADIO</comment>
+</data>
+<data name="Chat.SayHint" xml:space="preserve">
+  <value>SAY SOMETHING</value>
+  <comment>SAY SOMETHING</comment>
+</data>
+<data name="Chat.TransmitHint" xml:space="preserve">
+  <value>TRANSMIT</value>
+  <comment>TRANSMIT</comment>
+</data>
+<data name="Chat.TabAll" xml:space="preserve">
+  <value>ALL</value>
+  <comment>ALL</comment>
+</data>
+<data name="Chat.TabSetupTitle" xml:space="preserve">
+  <value>TAB SETUP</value>
+  <comment>TAB SETUP</comment>
+</data>
+<data name="Chat.NewTabTitle" xml:space="preserve">
+  <value>NEW TAB</value>
+  <comment>NEW TAB</comment>
+</data>
+<data name="Chat.NameLabel" xml:space="preserve">
+  <value>NAME</value>
+  <comment>NAME</comment>
+</data>
+<data name="Chat.ShowsLabel" xml:space="preserve">
+  <value>SHOWS</value>
+  <comment>SHOWS</comment>
+</data>
+<data name="Chat.BadgeLabel" xml:space="preserve">
+  <value>BADGE</value>
+  <comment>BADGE</comment>
+</data>
+<data name="Chat.Delete" xml:space="preserve">
+  <value>DELETE</value>
+  <comment>DELETE</comment>
+</data>
+<data name="Chat.Cancel" xml:space="preserve">
+  <value>CANCEL</value>
+  <comment>CANCEL</comment>
+</data>
+<data name="Chat.Done" xml:space="preserve">
+  <value>DONE</value>
+  <comment>DONE</comment>
+</data>
+<data name="Chat.KindSay" xml:space="preserve">
+  <value>SAY</value>
+  <comment>SAY</comment>
+</data>
+<data name="Chat.KindRadio" xml:space="preserve">
+  <value>RADIO</value>
+  <comment>RADIO</comment>
+</data>
+<data name="Chat.KindCombat" xml:space="preserve">
+  <value>COMBAT</value>
+  <comment>COMBAT</comment>
+</data>
+<data name="Chat.KindAction" xml:space="preserve">
+  <value>ACTION</value>
+  <comment>ACTION</comment>
+</data>
+<data name="Chat.KindNotice" xml:space="preserve">
+  <value>NOTICE</value>
+  <comment>NOTICE</comment>
+</data>
+<data name="Chat.GhostMoans" xml:space="preserve">
+  <value>{NAME} moans "{TEXT}"</value>
+  <comment>{NAME} moans "{TEXT}"</comment>
+</data>
+<data name="Chat.GhostGroans" xml:space="preserve">
+  <value>{NAME} groans "{TEXT}"</value>
+  <comment>{NAME} groans "{TEXT}"</comment>
+</data>
+<data name="Chat.GhostComplains" xml:space="preserve">
+  <value>{NAME} complains "{TEXT}"</value>
+  <comment>{NAME} complains "{TEXT}"</comment>
+</data>
+<data name="Chat.GhostLaments" xml:space="preserve">
+  <value>{NAME} laments "{TEXT}"</value>
+  <comment>{NAME} laments "{TEXT}"</comment>
+</data>
+<data name="Chat.GhostWails" xml:space="preserve">
+  <value>{NAME} wails "{TEXT}"</value>
+  <comment>{NAME} wails "{TEXT}"</comment>
+</data>
+<data name="Chat.GhostMutters" xml:space="preserve">
+  <value>{NAME} mutters "{TEXT}"</value>
+  <comment>{NAME} mutters "{TEXT}"</comment>
+</data>
+<data name="Chat.DeadTab" xml:space="preserve">
+  <value>DEAD</value>
+  <comment>DEAD</comment>
 </data>
 <data name="HoverVerbLabels.Ignite" xml:space="preserve">
   <value>점화</value>
@@ -1743,6 +1903,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>층 선택</value>
   <comment>select level</comment>
 </data>
+<data name="HoverVerbLabels.VehicleConsoleWindow" xml:space="preserve">
+  <value>flight console</value>
+  <comment>flight console</comment>
+</data>
 <data name="HoverVerbLabels.VendorRefillRefill" xml:space="preserve">
   <value>다시 채우기</value>
   <comment>refill</comment>
@@ -1778,6 +1942,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="HoverVerbLabels.UpgradeGenericFallback" xml:space="preserve">
   <value>업그레이드</value>
   <comment>upgrade</comment>
+</data>
+<data name="HoverVerbLabels.VehicleRefuel" xml:space="preserve">
+  <value>pour fuel</value>
+  <comment>pour fuel</comment>
 </data>
 <data name="ActivateVerbLabels.Wield" xml:space="preserve">
   <value>양손으로 들기</value>
@@ -1959,6 +2127,18 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{TOOL} + {TOOL2}(으)로 회전</value>
   <comment>use {TOOL} + {TOOL2} to rotate</comment>
 </data>
+<data name="HoverName.UseHintRefuel" xml:space="preserve">
+  <value>use {TOOL} to refuel</value>
+  <comment>use {TOOL} to refuel</comment>
+</data>
+<data name="HoverName.UseHintRefuelTwo" xml:space="preserve">
+  <value>use {TOOL} + {TOOL2} to refuel</value>
+  <comment>use {TOOL} + {TOOL2} to refuel</comment>
+</data>
+<data name="HoverName.UseHintBuckle" xml:space="preserve">
+  <value>drag a mob onto it to buckle</value>
+  <comment>drag a mob onto it to buckle</comment>
+</data>
 <data name="HoverName.PryOpenFallback" xml:space="preserve">
   <value>비집어 열기</value>
   <comment>pry open</comment>
@@ -2054,6 +2234,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="LadderStanceHint.Buckled" xml:space="preserve">
   <value>먼저 고정을 해제해야 함</value>
   <comment>unbuckle first</comment>
+</data>
+<data name="PilotTrainingHint.Untrained" xml:space="preserve">
+  <value>requires pilot training</value>
+  <comment>requires pilot training</comment>
 </data>
 <data name="FireInputDriver.DualHandedHoldDeny" xml:space="preserve">
   <value>양손으로 들어야 함</value>
@@ -2403,6 +2587,46 @@ The file is looked up beside this language file first, then under the game's Con
   <value>가슴 열림</value>
   <comment>CHEST OPEN</comment>
 </data>
+<data name="Moodlet.Title.InLava" xml:space="preserve">
+  <value>IN LAVA</value>
+  <comment>IN LAVA</comment>
+</data>
+<data name="Moodlet.Title.Drunk" xml:space="preserve">
+  <value>DRUNK</value>
+  <comment>DRUNK</comment>
+</data>
+<data name="Moodlet.Title.Hungover" xml:space="preserve">
+  <value>HUNGOVER</value>
+  <comment>HUNGOVER</comment>
+</data>
+<data name="Moodlet.Title.Tipsy" xml:space="preserve">
+  <value>TIPSY</value>
+  <comment>TIPSY</comment>
+</data>
+<data name="Moodlet.Title.Hammered" xml:space="preserve">
+  <value>HAMMERED</value>
+  <comment>HAMMERED</comment>
+</data>
+<data name="Moodlet.Title.Blackout" xml:space="preserve">
+  <value>BLACKOUT</value>
+  <comment>BLACKOUT</comment>
+</data>
+<data name="Moodlet.Title.Woozy" xml:space="preserve">
+  <value>WOOZY</value>
+  <comment>WOOZY</comment>
+</data>
+<data name="Moodlet.Title.Doped" xml:space="preserve">
+  <value>DOPED</value>
+  <comment>DOPED</comment>
+</data>
+<data name="Moodlet.Title.Overdosed" xml:space="preserve">
+  <value>OVERDOSED</value>
+  <comment>OVERDOSED</comment>
+</data>
+<data name="Moodlet.Title.Numbed" xml:space="preserve">
+  <value>NUMBED</value>
+  <comment>NUMBED</comment>
+</data>
 <data name="Moodlet.Title.Fallback" xml:space="preserve">
   <value>~무드렛</value>
   <comment>~MOODLET</comment>
@@ -2691,6 +2915,46 @@ The file is looked up beside this language file first, then under the game's Con
   <value>흉강이 열려 있음</value>
   <comment>Your chest cavity is open</comment>
 </data>
+<data name="Moodlet.Flavor.InLava" xml:space="preserve">
+  <value>Wading through molten rock, barely able to move</value>
+  <comment>Wading through molten rock, barely able to move</comment>
+</data>
+<data name="Moodlet.Flavor.Drunk.Tipsy" xml:space="preserve">
+  <value>A warm glow and a loose tongue</value>
+  <comment>A warm glow and a loose tongue</comment>
+</data>
+<data name="Moodlet.Flavor.Drunk.Drunk" xml:space="preserve">
+  <value>The floor is not where it was</value>
+  <comment>The floor is not where it was</comment>
+</data>
+<data name="Moodlet.Flavor.Drunk.Hammered" xml:space="preserve">
+  <value>Two of everything and none of it steady</value>
+  <comment>Two of everything and none of it steady</comment>
+</data>
+<data name="Moodlet.Flavor.Drunk.Blackout" xml:space="preserve">
+  <value>The lights are going out</value>
+  <comment>The lights are going out</comment>
+</data>
+<data name="Moodlet.Flavor.Hungover" xml:space="preserve">
+  <value>Every sound is a hammer</value>
+  <comment>Every sound is a hammer</comment>
+</data>
+<data name="Moodlet.Flavor.Narcotic.Woozy" xml:space="preserve">
+  <value>The edges go soft</value>
+  <comment>The edges go soft</comment>
+</data>
+<data name="Moodlet.Flavor.Narcotic.Doped" xml:space="preserve">
+  <value>The room is far away and slow</value>
+  <comment>The room is far away and slow</comment>
+</data>
+<data name="Moodlet.Flavor.Narcotic.Overdosed" xml:space="preserve">
+  <value>You are sinking</value>
+  <comment>You are sinking</comment>
+</data>
+<data name="Moodlet.Flavor.Narcotic.Numbed" xml:space="preserve">
+  <value>A warm fog sits behind your eyes</value>
+  <comment>A warm fog sits behind your eyes</comment>
+</data>
 <data name="Moodlet.Flavor.Fallback" xml:space="preserve">
   <value>~무드렛</value>
   <comment>~moodlet</comment>
@@ -2895,6 +3159,22 @@ The file is looked up beside this language file first, then under the game's Con
   <value>상처가 닫힐 때까지 엎드려 있거나, 다른 사람이 끌어 주게 하십시오</value>
   <comment>Stay down until you are closed up, or let someone drag you</comment>
 </data>
+<data name="Moodlet.Hint.InLava" xml:space="preserve">
+  <value>Get out of the lava before it burns through you</value>
+  <comment>Get out of the lava before it burns through you</comment>
+</data>
+<data name="Moodlet.Hint.Drunk" xml:space="preserve">
+  <value>Sober up: time, or Ethylredoxrazine</value>
+  <comment>Sober up: time, dialysis, or Ethylredoxrazine</comment>
+</data>
+<data name="Moodlet.Hint.Hungover" xml:space="preserve">
+  <value>It passes with time</value>
+  <comment>It passes with time</comment>
+</data>
+<data name="Moodlet.Hint.Narcotic" xml:space="preserve">
+  <value>Let it wear off; it is in your blood</value>
+  <comment>Let it wear off; it is in your blood</comment>
+</data>
 <data name="Moodlet.Phrase.ZombiesCannotSeeYou" xml:space="preserve">
   <value>좀비가 당신을 볼 수 없음</value>
   <comment>Zombies cannot see you</comment>
@@ -3079,6 +3359,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>움직이면 출혈이 다시 시작됨</value>
   <comment>Moving reopens the bleeding</comment>
 </data>
+<data name="Moodlet.Phrase.VisualDistortions" xml:space="preserve">
+  <value>Visual distortions</value>
+  <comment>Visual distortions</comment>
+</data>
 <data name="Moodlet.WordToken.MovingOppositeFacing" xml:space="preserve">
   <value>바라보는 반대 방향으로 이동 {WORD}</value>
   <comment>Moving opposite the facing {WORD}</comment>
@@ -3118,6 +3402,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Moodlet.WordToken.ThirstEffects" xml:space="preserve">
   <value>갈증 효과 {WORD}</value>
   <comment>Thirst effects {WORD}</comment>
+</data>
+<data name="Moodlet.WordToken.Clumsy" xml:space="preserve">
+  <value>Drops things</value>
+  <comment>Drops things</comment>
+</data>
+<data name="Moodlet.WordToken.Falls" xml:space="preserve">
+  <value>Falls over</value>
+  <comment>Falls over</comment>
 </data>
 <data name="Moodlet.Word.Reduced" xml:space="preserve">
   <value>감소</value>
@@ -3318,6 +3610,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Moodlet.Unit.PerStepInternalBleeding" xml:space="preserve">
   <value> 걸음당: 내출혈</value>
   <comment> per step: internal bleeding</comment>
+</data>
+<data name="Moodlet.Unit.SightTiles" xml:space="preserve">
+  <value> tiles of sight</value>
+  <comment> tiles of sight</comment>
 </data>
 <data name="StripUi.Adjacent" xml:space="preserve">
   <value>인접</value>
@@ -3943,6 +4239,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>다음 레시피를 해금합니다:</value>
   <comment>Unlocks the following recipes:</comment>
 </data>
+<data name="TraitChips.OperatesLabel" xml:space="preserve">
+  <value>OPERATES</value>
+  <comment>OPERATES</comment>
+</data>
+<data name="TraitChips.OperatesHeader" xml:space="preserve">
+  <value>Trained to pilot the following vehicles:</value>
+  <comment>Trained to pilot the following vehicles:</comment>
+</data>
 <data name="TraitChips.Unit.Accuracy" xml:space="preserve">
   <value> 명중률</value>
   <comment> Accuracy</comment>
@@ -4098,6 +4402,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="TraitChips.Unit.MountedGunScatter" xml:space="preserve">
   <value> 거치형 총 탄 퍼짐</value>
   <comment> Mounted gun scatter</comment>
+</data>
+<data name="TraitChips.Unit.AlcoholEffects" xml:space="preserve">
+  <value> Alcohol effects</value>
+  <comment> Alcohol effects</comment>
 </data>
 <data name="TraitChips.Marker.DeafToken" xml:space="preserve">
   <value>청각 장애</value>
@@ -4780,7 +5088,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>LINKED EMITTERS</comment>
 </data>
 <data name="EmitterWindow.BriefBody" xml:space="preserve">
-  <value>전원이 켜진 각 방출기는 이 갑판의 연결 범위 내에 있는 다른 모든 전원이 켜진 방출기로 필드 선을 투사합니다. 격리 구역의 바깥 경계만 유지됩니다: 닫힌 고리 안쪽을 가로지르는 선은 투사되지 않습니다. 지면을 둘러싸 고리를 닫는 선은 호박색으로 표시됩니다. 그 고리 안에 표본이 있으면 표본은 격리되어 밖으로 나올 수 없습니다. 방출기는 스위치가 켜져 있고 환경 채널에 구역 전원이 들어오거나 충전된 파워 셀이 장착되어 있을 때 투사합니다. 구역 전원을 사용하면 셀이 소모되지 않습니다. 고리 구성원 중 하나라도 스위치가 꺼지거나, 마지막 전원을 잃거나, 파괴되는 즉시 고리가 열립니다.</value>
+  <value>EACH POWERED EMITTER PROJECTS A FIELD LINE TO EVERY OTHER POWERED EMITTER WITHIN ITS LINK RANGE ON THIS DECK. ONLY THE OUTER EDGE OF AN ENCLOSURE STANDS: A LINE THAT WOULD CROSS INSIDE A CLOSED RING IS NOT PROJECTED. LINES THAT CLOSE A RING AROUND GROUND RUN AMBER. WHERE THAT RING HOLDS THE SPECIMEN IT IS CONTAINED AND CANNOT STEP OUT. AN EMITTER PROJECTS WITH ITS SWITCH SET ON AND EITHER ROOM POWER ON THE ENVIRONMENT CHANNEL OR A CHARGED POWER CELL FITTED. ROOM POWER COSTS THE CELL NOTHING. THE RING OPENS THE MOMENT ANY MEMBER IS SWITCHED OFF, LOSES ITS LAST POWER SOURCE OR IS DESTROYED.</value>
   <comment>EACH POWERED EMITTER PROJECTS A FIELD LINE TO EVERY OTHER POWERED EMITTER WITHIN ITS LINK RANGE ON THIS DECK. ONLY THE OUTER EDGE OF AN ENCLOSURE STANDS: A LINE THAT WOULD CROSS INSIDE A CLOSED RING IS NOT PROJECTED. LINES THAT CLOSE A RING AROUND GROUND RUN AMBER. WHERE THAT RING HOLDS THE SPECIMEN IT IS CONTAINED AND CANNOT STEP OUT. AN EMITTER PROJECTS WITH ITS SWITCH SET ON AND EITHER ROOM POWER ON THE ENVIRONMENT CHANNEL OR A CHARGED POWER CELL FITTED. ROOM POWER COSTS THE CELL NOTHING. THE RING OPENS THE MOMENT ANY MEMBER IS SWITCHED OFF, LOSES ITS LAST POWER SOURCE OR IS DESTROYED.</comment>
 </data>
 <data name="EmitterWindow.PowerKey" xml:space="preserve">
@@ -6879,6 +7187,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>취소</value>
   <comment>DISCARD</comment>
 </data>
+<data name="Settings.MonitorLabel" xml:space="preserve">
+  <value>MONITOR</value>
+  <comment>MONITOR</comment>
+</data>
 <data name="Settings.DisplayModeLabel" xml:space="preserve">
   <value>화면 모드</value>
   <comment>DISPLAY MODE</comment>
@@ -6887,10 +7199,6 @@ The file is looked up beside this language file first, then under the game's Con
   <value>해상도</value>
   <comment>RESOLUTION</comment>
 </data>
-<data name="Settings.RefreshRateLabel" xml:space="preserve">
-  <value>주사율</value>
-  <comment>REFRESH RATE</comment>
-</data>
 <data name="Settings.FrameQueueLimitLabel" xml:space="preserve">
   <value>미리 대기하는 프레임</value>
   <comment>FRAMES QUEUED AHEAD</comment>
@@ -6898,6 +7206,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Settings.AmbientOcclusionLabel" xml:space="preserve">
   <value>앰비언트 오클루전</value>
   <comment>AMBIENT OCCLUSION</comment>
+</data>
+<data name="Settings.SpriteReliefLabel" xml:space="preserve">
+  <value>SPRITE RELIEF</value>
+  <comment>SPRITE RELIEF</comment>
 </data>
 <data name="Settings.BelowFloorsLabel" xml:space="preserve">
   <value>바닥 아래</value>
@@ -6971,6 +7283,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>HUD 크기</value>
   <comment>HUD SCALE</comment>
 </data>
+<data name="Settings.GaugeScaleLabel" xml:space="preserve">
+  <value>GAUGE SCALE</value>
+  <comment>GAUGE SCALE</comment>
+</data>
 <data name="Settings.MoodletScaleLabel" xml:space="preserve">
   <value>무드렛 크기</value>
   <comment>MOODLET SCALE</comment>
@@ -6978,6 +7294,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Settings.HudOpacityLabel" xml:space="preserve">
   <value>HUD 투명도</value>
   <comment>HUD TRANSPARENCY</comment>
+</data>
+<data name="Settings.WindowOpacityLabel" xml:space="preserve">
+  <value>WINDOW TRANSPARENCY</value>
+  <comment>WINDOW TRANSPARENCY</comment>
 </data>
 <data name="Settings.ScopeReticleLabel" xml:space="preserve">
   <value>조준경 조준선 두께</value>
@@ -6995,6 +7315,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>자신의 이동 예측</value>
   <comment>PREDICT OWN MOVEMENT</comment>
 </data>
+<data name="Settings.HeadingRelativeVehicleKeysLabel" xml:space="preserve">
+  <value>HEADING-RELATIVE VEHICLE KEYS</value>
+  <comment>HEADING-RELATIVE VEHICLE KEYS</comment>
+</data>
+<data name="Settings.AlwaysXrayOverlayLabel" xml:space="preserve">
+  <value>ALWAYS X-RAY VEHICLE ROOF</value>
+  <comment>ALWAYS X-RAY VEHICLE ROOF</comment>
+</data>
 <data name="Settings.NoLanguageFiles" xml:space="preserve">
   <value>~언어 파일 없음</value>
   <comment>~NO LANGUAGE FILES</comment>
@@ -7002,6 +7330,18 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Settings.ResolutionFormat" xml:space="preserve">
   <value>{WIDTH} x {HEIGHT}</value>
   <comment>{WIDTH} x {HEIGHT}</comment>
+</data>
+<data name="Settings.FullscreenModeFormat" xml:space="preserve">
+  <value>{WIDTH} x {HEIGHT} @ {RATE} HZ</value>
+  <comment>{WIDTH} x {HEIGHT} @ {RATE} HZ</comment>
+</data>
+<data name="Settings.NativeModeFormat" xml:space="preserve">
+  <value>{WIDTH} x {HEIGHT} @ {RATE} HZ (NATIVE)</value>
+  <comment>{WIDTH} x {HEIGHT} @ {RATE} HZ (NATIVE)</comment>
+</data>
+<data name="Settings.CustomResolutionFormat" xml:space="preserve">
+  <value>{WIDTH} x {HEIGHT} (CUSTOM)</value>
+  <comment>{WIDTH} x {HEIGHT} (CUSTOM)</comment>
 </data>
 <data name="Settings.Tab.Controls" xml:space="preserve">
   <value>조작</value>
@@ -7018,6 +7358,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Settings.Tab.Interface" xml:space="preserve">
   <value>인터페이스</value>
   <comment>INTERFACE</comment>
+</data>
+<data name="Settings.ChatScaleLabel" xml:space="preserve">
+  <value>CHAT SCALE</value>
+  <comment>CHAT SCALE</comment>
 </data>
 <data name="Bindings.Global" xml:space="preserve">
   <value>전체</value>
@@ -8311,6 +8655,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>소멸</value>
   <comment>UNMADE</comment>
 </data>
+<data name="EorScreen.CauseCrushed" xml:space="preserve">
+  <value>CRUSHED</value>
+  <comment>CRUSHED</comment>
+</data>
+<data name="EorScreen.CauseAlcohol" xml:space="preserve">
+  <value>DRANK TO DEATH</value>
+  <comment>POISONED</comment>
+</data>
 <data name="EorScreen.CauseOther" xml:space="preserve">
   <value>기타</value>
   <comment>OTHER</comment>
@@ -9119,6 +9471,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>자극됨</value>
   <comment>STIMULATED</comment>
 </data>
+<data name="Codex.Chip.Intoxicated" xml:space="preserve">
+  <value>INTOXICANT</value>
+  <comment>INTOXICANT</comment>
+</data>
 <data name="Codex.Topic.Chemistry" xml:space="preserve">
   <value>화학</value>
   <comment>CHEMISTRY</comment>
@@ -9382,6 +9738,18 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Codex.Property.Antiradiation" xml:space="preserve">
   <value>방사선 완화</value>
   <comment>BLUNTS RADIATION</comment>
+</data>
+<data name="Codex.Property.Alcoholic" xml:space="preserve">
+  <value>INTOXICATES</value>
+  <comment>INTOXICATES</comment>
+</data>
+<data name="Codex.Property.Focusing" xml:space="preserve">
+  <value>SOBERS UP</value>
+  <comment>SOBERS UP</comment>
+</data>
+<data name="Codex.Property.Narcotic" xml:space="preserve">
+  <value>CLOUDS THE MIND</value>
+  <comment>CLOUDS THE MIND</comment>
 </data>
 <data name="Codex.Surgery.Stats" xml:space="preserve">
   <value>능력치</value>
@@ -10275,6 +10643,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{CLOTHING}을(를) 벗으십시오</value>
   <comment>remove the {CLOTHING}</comment>
 </data>
+<data name="VehicleRefuelHint.Aloft" xml:space="preserve">
+  <value>cannot refuel in flight</value>
+  <comment>cannot refuel in flight</comment>
+</data>
+<data name="VehicleRefuelHint.Land" xml:space="preserve">
+  <value>land to refuel</value>
+  <comment>land to refuel</comment>
+</data>
 <data name="CrewMonitor.Header" xml:space="preserve">
   <value>승무원 모니터</value>
   <comment>CREW MONITOR</comment>
@@ -10566,6 +10942,574 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="ElevatorUi.ReadyWord" xml:space="preserve">
   <value>준비됨</value>
   <comment>READY</comment>
+</data>
+<data name="PilotKeys.LandingRefused" xml:space="preserve">
+  <value>landing zone not clear</value>
+  <comment>landing zone not clear</comment>
+</data>
+<data name="PilotKeys.FuelRefused" xml:space="preserve">
+  <value>not enough fuel</value>
+  <comment>not enough fuel</comment>
+</data>
+<data name="PilotKeys.BatteryRefused" xml:space="preserve">
+  <value>battery: start refused</value>
+  <comment>battery: start refused</comment>
+</data>
+<data name="PilotKeys.FuelPressureRefused" xml:space="preserve">
+  <value>fuel pressure low: start refused</value>
+  <comment>fuel pressure low: start refused</comment>
+</data>
+<data name="PilotKeys.RotorSpoolingRefused" xml:space="preserve">
+  <value>rotor spooling: wait</value>
+  <comment>rotor spooling: wait</comment>
+</data>
+<data name="PilotKeys.RotorRpmRefused" xml:space="preserve">
+  <value>rotor too low to lift</value>
+  <comment>rotor too low to lift</comment>
+</data>
+<data name="PilotKeys.AbortToast" xml:space="preserve">
+  <value>start aborted</value>
+  <comment>start aborted</comment>
+</data>
+<data name="PilotKeys.DeckFireToast" xml:space="preserve">
+  <value>engine deck fire</value>
+  <comment>engine deck fire</comment>
+</data>
+<data name="PilotKeys.FailureToast" xml:space="preserve">
+  <value>engine failure</value>
+  <comment>engine failure</comment>
+</data>
+<data name="VehicleConsole.HeaderLine" xml:space="preserve">
+  <value>FLIGHT CONSOLE</value>
+  <comment>FLIGHT CONSOLE</comment>
+</data>
+<data name="VehicleConsole.SubLine" xml:space="preserve">
+  <value>{VEHICLE} // USCM AIR WING</value>
+  <comment>{VEHICLE} // USCM AIR WING</comment>
+</data>
+<data name="VehicleConsole.RefusedBanner" xml:space="preserve">
+  <value>// LZ OBSTRUCTED - LANDING REFUSED //</value>
+  <comment>// LZ OBSTRUCTED - LANDING REFUSED //</comment>
+</data>
+<data name="VehicleConsole.StatusSection" xml:space="preserve">
+  <value>FLIGHT STATUS</value>
+  <comment>FLIGHT STATUS</comment>
+</data>
+<data name="VehicleConsole.ControlsSection" xml:space="preserve">
+  <value>FLIGHT CONTROLS</value>
+  <comment>FLIGHT CONTROLS</comment>
+</data>
+<data name="VehicleConsole.RotorSection" xml:space="preserve">
+  <value>ROTOR AND ENGINE</value>
+  <comment>ROTOR AND ENGINE</comment>
+</data>
+<data name="VehicleConsole.DoorsSection" xml:space="preserve">
+  <value>DOORS</value>
+  <comment>DOORS</comment>
+</data>
+<data name="VehicleConsole.LightsSection" xml:space="preserve">
+  <value>LIGHTS</value>
+  <comment>LIGHTS</comment>
+</data>
+<data name="VehicleConsole.CabinSection" xml:space="preserve">
+  <value>CABIN</value>
+  <comment>CABIN</comment>
+</data>
+<data name="VehicleConsole.PhaseKey" xml:space="preserve">
+  <value>PHASE</value>
+  <comment>PHASE</comment>
+</data>
+<data name="VehicleConsole.PhaseLanded" xml:space="preserve">
+  <value>LANDED</value>
+  <comment>LANDED</comment>
+</data>
+<data name="VehicleConsole.PhaseSpinUp" xml:space="preserve">
+  <value>SPINNING UP</value>
+  <comment>SPINNING UP</comment>
+</data>
+<data name="VehicleConsole.PhaseTakingOff" xml:space="preserve">
+  <value>TAKING OFF</value>
+  <comment>TAKING OFF</comment>
+</data>
+<data name="VehicleConsole.PhaseFlying" xml:space="preserve">
+  <value>AIRBORNE</value>
+  <comment>AIRBORNE</comment>
+</data>
+<data name="VehicleConsole.PhaseLanding" xml:space="preserve">
+  <value>LANDING</value>
+  <comment>LANDING</comment>
+</data>
+<data name="VehicleConsole.PhaseSpinDown" xml:space="preserve">
+  <value>SPINNING DOWN</value>
+  <comment>SPINNING DOWN</comment>
+</data>
+<data name="VehicleConsole.TileLine" xml:space="preserve">
+  <value>TILE {X},{Y}</value>
+  <comment>TILE {X},{Y}</comment>
+</data>
+<data name="VehicleConsole.AltitudeKey" xml:space="preserve">
+  <value>ALTITUDE</value>
+  <comment>ALTITUDE</comment>
+</data>
+<data name="VehicleConsole.AltitudeLine" xml:space="preserve">
+  <value>{PX} PX</value>
+  <comment>{PX} PX</comment>
+</data>
+<data name="VehicleConsole.HeadingKey" xml:space="preserve">
+  <value>HEADING</value>
+  <comment>HEADING</comment>
+</data>
+<data name="VehicleConsole.HeadingNorth" xml:space="preserve">
+  <value>N</value>
+  <comment>N</comment>
+</data>
+<data name="VehicleConsole.HeadingEast" xml:space="preserve">
+  <value>E</value>
+  <comment>E</comment>
+</data>
+<data name="VehicleConsole.HeadingSouth" xml:space="preserve">
+  <value>S</value>
+  <comment>S</comment>
+</data>
+<data name="VehicleConsole.HeadingWest" xml:space="preserve">
+  <value>W</value>
+  <comment>W</comment>
+</data>
+<data name="VehicleConsole.SpeedKey" xml:space="preserve">
+  <value>GROUND SPEED</value>
+  <comment>GROUND SPEED</comment>
+</data>
+<data name="VehicleConsole.SpeedLine" xml:space="preserve">
+  <value>{WHOLE}.{FRAC} TILES/S</value>
+  <comment>{WHOLE}.{FRAC} TILES/S</comment>
+</data>
+<data name="VehicleConsole.CapKey" xml:space="preserve">
+  <value>CAP</value>
+  <comment>CAP</comment>
+</data>
+<data name="VehicleConsole.CollectiveKey" xml:space="preserve">
+  <value>COLLECTIVE</value>
+  <comment>COLLECTIVE</comment>
+</data>
+<data name="VehicleConsole.TakeOffLabel" xml:space="preserve">
+  <value>TAKE OFF</value>
+  <comment>TAKE OFF</comment>
+</data>
+<data name="VehicleConsole.LandLabel" xml:space="preserve">
+  <value>LAND</value>
+  <comment>LAND</comment>
+</data>
+<data name="VehicleConsole.ClimbingLabel" xml:space="preserve">
+  <value>CLIMBING</value>
+  <comment>CLIMBING</comment>
+</data>
+<data name="VehicleConsole.DescendingLabel" xml:space="preserve">
+  <value>DESCENDING</value>
+  <comment>DESCENDING</comment>
+</data>
+<data name="VehicleConsole.ThrottleKey" xml:space="preserve">
+  <value>THROTTLE</value>
+  <comment>THROTTLE</comment>
+</data>
+<data name="VehicleConsole.ThrottleLine" xml:space="preserve">
+  <value>{PERCENT}%</value>
+  <comment>{PERCENT}%</comment>
+</data>
+<data name="VehicleConsole.MinusLabel" xml:space="preserve">
+  <value>-</value>
+  <comment>-</comment>
+</data>
+<data name="VehicleConsole.PlusLabel" xml:space="preserve">
+  <value>+</value>
+  <comment>+</comment>
+</data>
+<data name="VehicleConsole.HoverKey" xml:space="preserve">
+  <value>HOVER SETTLE</value>
+  <comment>HOVER SETTLE</comment>
+</data>
+<data name="VehicleConsole.PilotOnlyHint" xml:space="preserve">
+  <value>CONTROLS ANSWER THE SEATED PILOT ONLY</value>
+  <comment>CONTROLS ANSWER THE SEATED PILOTS ONLY</comment>
+</data>
+<data name="VehicleConsole.MainRotorKey" xml:space="preserve">
+  <value>MAIN ROTOR</value>
+  <comment>MAIN ROTOR</comment>
+</data>
+<data name="VehicleConsole.RotorStopped" xml:space="preserve">
+  <value>STOPPED</value>
+  <comment>STOPPED</comment>
+</data>
+<data name="VehicleConsole.RotorSlow" xml:space="preserve">
+  <value>SPOOLING</value>
+  <comment>SPOOLING</comment>
+</data>
+<data name="VehicleConsole.RotorFast" xml:space="preserve">
+  <value>NOMINAL</value>
+  <comment>NOMINAL</comment>
+</data>
+<data name="VehicleConsole.RotorLine" xml:space="preserve">
+  <value>{PERCENT}% RPM</value>
+  <comment>{PERCENT}% RPM</comment>
+</data>
+<data name="VehicleConsole.PortDoorKey" xml:space="preserve">
+  <value>PORT DOOR</value>
+  <comment>PORT DOOR</comment>
+</data>
+<data name="VehicleConsole.StarboardDoorKey" xml:space="preserve">
+  <value>STBD DOOR</value>
+  <comment>STBD DOOR</comment>
+</data>
+<data name="VehicleConsole.DoorKey" xml:space="preserve">
+  <value>DOOR {N}</value>
+  <comment>DOOR {N}</comment>
+</data>
+<data name="VehicleConsole.OpenLabel" xml:space="preserve">
+  <value>OPEN</value>
+  <comment>OPEN</comment>
+</data>
+<data name="VehicleConsole.ClosedLabel" xml:space="preserve">
+  <value>CLOSED</value>
+  <comment>CLOSED</comment>
+</data>
+<data name="VehicleConsole.DoorsHint" xml:space="preserve">
+  <value>DOORS OPEN TO THE AIR WHILE AIRBORNE - A STEP OFF THE SILL IS A FALL</value>
+  <comment>DOORS OPEN TO THE AIR WHILE AIRBORNE - A STEP OFF THE SILL IS A FALL</comment>
+</data>
+<data name="VehicleConsole.CabinLightsKey" xml:space="preserve">
+  <value>CABIN</value>
+  <comment>CABIN</comment>
+</data>
+<data name="VehicleConsole.NavLightsKey" xml:space="preserve">
+  <value>NAV</value>
+  <comment>NAV</comment>
+</data>
+<data name="VehicleConsole.PilotSeat" xml:space="preserve">
+  <value>PILOT</value>
+  <comment>PILOT</comment>
+</data>
+<data name="VehicleConsole.CoPilotSeat" xml:space="preserve">
+  <value>CO-PILOT</value>
+  <comment>CO-PILOT</comment>
+</data>
+<data name="VehicleConsole.SeatKey" xml:space="preserve">
+  <value>SEAT {N}</value>
+  <comment>SEAT {N}</comment>
+</data>
+<data name="VehicleConsole.EmptySeat" xml:space="preserve">
+  <value>EMPTY</value>
+  <comment>EMPTY</comment>
+</data>
+<data name="VehicleConsole.FootLzClear" xml:space="preserve">
+  <value>LZ: CLEAR</value>
+  <comment>LZ: CLEAR</comment>
+</data>
+<data name="VehicleConsole.FootLzObstructed" xml:space="preserve">
+  <value>LZ: OBSTRUCTED</value>
+  <comment>LZ: OBSTRUCTED</comment>
+</data>
+<data name="VehicleConsole.FootLzNone" xml:space="preserve">
+  <value>LZ: --</value>
+  <comment>LZ: --</comment>
+</data>
+<data name="VehicleConsole.FootModeGround" xml:space="preserve">
+  <value>MODE: GROUND</value>
+  <comment>MODE: GROUND</comment>
+</data>
+<data name="VehicleConsole.FootModeFlight" xml:space="preserve">
+  <value>MODE: FLIGHT</value>
+  <comment>MODE: FLIGHT</comment>
+</data>
+<data name="VehicleConsole.PhaseIdle" xml:space="preserve">
+  <value>IDLE</value>
+  <comment>IDLE</comment>
+</data>
+<data name="VehicleConsole.PhaseStarting" xml:space="preserve">
+  <value>STARTING</value>
+  <comment>STARTING</comment>
+</data>
+<data name="VehicleConsole.PhaseStopping" xml:space="preserve">
+  <value>STOPPING</value>
+  <comment>STOPPING</comment>
+</data>
+<data name="VehicleConsole.EngineKey" xml:space="preserve">
+  <value>ENGINE</value>
+  <comment>ENGINE</comment>
+</data>
+<data name="VehicleConsole.EngineStartLabel" xml:space="preserve">
+  <value>ENGINE START</value>
+  <comment>ENGINE START</comment>
+</data>
+<data name="VehicleConsole.EngineStopLabel" xml:space="preserve">
+  <value>ENGINE STOP</value>
+  <comment>ENGINE STOP</comment>
+</data>
+<data name="VehicleConsole.EngineStartingLabel" xml:space="preserve">
+  <value>STARTING</value>
+  <comment>STARTING</comment>
+</data>
+<data name="VehicleConsole.EngineStoppingLabel" xml:space="preserve">
+  <value>STOPPING</value>
+  <comment>STOPPING</comment>
+</data>
+<data name="VehicleConsole.EngineRunningLabel" xml:space="preserve">
+  <value>RUNNING</value>
+  <comment>RUNNING</comment>
+</data>
+<data name="VehicleConsole.LowFuelBanner" xml:space="preserve">
+  <value>// LOW FUEL - FLIGHT REFUSED //</value>
+  <comment>// LOW FUEL - LIFT REFUSED //</comment>
+</data>
+<data name="VehicleConsole.FuelKey" xml:space="preserve">
+  <value>FUEL</value>
+  <comment>FUEL</comment>
+</data>
+<data name="VehicleConsole.FuelNominal" xml:space="preserve">
+  <value>NOMINAL</value>
+  <comment>NOMINAL</comment>
+</data>
+<data name="VehicleConsole.FuelLow" xml:space="preserve">
+  <value>LOW</value>
+  <comment>LOW</comment>
+</data>
+<data name="VehicleConsole.FuelEmpty" xml:space="preserve">
+  <value>EMPTY</value>
+  <comment>EMPTY</comment>
+</data>
+<data name="VehicleConsole.PhaseStalling" xml:space="preserve">
+  <value>ENGINE OUT</value>
+  <comment>ENGINE OUT</comment>
+</data>
+<data name="VehicleConsole.PhaseFalling" xml:space="preserve">
+  <value>GOING DOWN</value>
+  <comment>GOING DOWN</comment>
+</data>
+<data name="VehicleConsole.EngineOutLabel" xml:space="preserve">
+  <value>MAYDAY</value>
+  <comment>MAYDAY</comment>
+</data>
+<data name="VehicleConsole.PowerSection" xml:space="preserve">
+  <value>POWER</value>
+  <comment>POWER</comment>
+</data>
+<data name="VehicleConsole.BatteryKey" xml:space="preserve">
+  <value>BAT</value>
+  <comment>BAT</comment>
+</data>
+<data name="VehicleConsole.FuelPumpKey" xml:space="preserve">
+  <value>FUEL PUMP</value>
+  <comment>FUEL PUMP</comment>
+</data>
+<data name="VehicleConsole.GeneratorKey" xml:space="preserve">
+  <value>GEN</value>
+  <comment>GEN</comment>
+</data>
+<data name="VehicleConsole.BatteryReadoutKey" xml:space="preserve">
+  <value>BATTERY</value>
+  <comment>BATTERY</comment>
+</data>
+<data name="VehicleConsole.BatteryReserve" xml:space="preserve">
+  <value>RESERVE</value>
+  <comment>RESERVE</comment>
+</data>
+<data name="VehicleConsole.BatteryLow" xml:space="preserve">
+  <value>LOW</value>
+  <comment>LOW</comment>
+</data>
+<data name="VehicleConsole.BatteryNominal" xml:space="preserve">
+  <value>NOMINAL</value>
+  <comment>NOMINAL</comment>
+</data>
+<data name="VehicleConsole.GenOffCaution" xml:space="preserve">
+  <value>// GEN OFF - NOT CHARGING //</value>
+  <comment>// GEN OFF - NOT CHARGING //</comment>
+</data>
+<data name="VehicleConsole.PumpOffLabel" xml:space="preserve">
+  <value>PUMP OFF</value>
+  <comment>PUMP OFF</comment>
+</data>
+<data name="VehicleConsole.BatteryBanner" xml:space="preserve">
+  <value>// BATTERY - START REFUSED //</value>
+  <comment>// BATTERY - START REFUSED //</comment>
+</data>
+<data name="VehicleConsole.FuelPressureBanner" xml:space="preserve">
+  <value>// FUEL PRES LOW - START REFUSED //</value>
+  <comment>// FUEL PRES LOW - START REFUSED //</comment>
+</data>
+<data name="VehicleConsole.FuelPressureKey" xml:space="preserve">
+  <value>FUEL PRES</value>
+  <comment>FUEL PRES</comment>
+</data>
+<data name="VehicleConsole.FuelPressureOff" xml:space="preserve">
+  <value>OFF</value>
+  <comment>OFF</comment>
+</data>
+<data name="VehicleConsole.FuelPressureRising" xml:space="preserve">
+  <value>RISING</value>
+  <comment>RISING</comment>
+</data>
+<data name="VehicleConsole.FuelPressureLow" xml:space="preserve">
+  <value>LOW</value>
+  <comment>LOW</comment>
+</data>
+<data name="VehicleConsole.FuelPressureNominal" xml:space="preserve">
+  <value>NOMINAL</value>
+  <comment>NOMINAL</comment>
+</data>
+<data name="VehicleConsole.FuelPressureCaution" xml:space="preserve">
+  <value>// FUEL PRES LOW - ENGINE STARVING //</value>
+  <comment>// FUEL PRES LOW - ENGINE STARVING //</comment>
+</data>
+<data name="VehicleConsole.RotorSpoolingBanner" xml:space="preserve">
+  <value>// ROTOR SPOOLING - WAIT //</value>
+  <comment>// ROTOR SPOOLING - WAIT //</comment>
+</data>
+<data name="VehicleConsole.RotorLowBanner" xml:space="preserve">
+  <value>// ROTOR LOW - THROTTLE UP //</value>
+  <comment>// ROTOR LOW - THROTTLE UP //</comment>
+</data>
+<data name="VehicleConsole.TooHeavyBanner" xml:space="preserve">
+  <value>// TOO HEAVY - LIGHTEN THE CABIN //</value>
+  <comment>// TOO HEAVY - LIGHTEN THE CABIN //</comment>
+</data>
+<data name="VehicleConsole.HoldToStartLabel" xml:space="preserve">
+  <value>HOLD TO START</value>
+  <comment>HOLD TO START</comment>
+</data>
+<data name="VehicleConsole.ReleaseLabel" xml:space="preserve">
+  <value>RELEASE</value>
+  <comment>RELEASE</comment>
+</data>
+<data name="VehicleConsole.ThrottleToIdleLabel" xml:space="preserve">
+  <value>THROTTLE TO IDLE</value>
+  <comment>THROTTLE TO IDLE</comment>
+</data>
+<data name="VehicleConsole.ThrottleDownLabel" xml:space="preserve">
+  <value>DOWN</value>
+  <comment>DOWN</comment>
+</data>
+<data name="VehicleConsole.ThrottleUpLabel" xml:space="preserve">
+  <value>UP</value>
+  <comment>UP</comment>
+</data>
+<data name="VehicleConsole.ClimbLabel" xml:space="preserve">
+  <value>CLIMB</value>
+  <comment>CLIMB</comment>
+</data>
+<data name="VehicleConsole.DescendLabel" xml:space="preserve">
+  <value>DESCEND</value>
+  <comment>DESCEND</comment>
+</data>
+<data name="VehicleConsole.MotionClimb" xml:space="preserve">
+  <value>CLIMB</value>
+  <comment>CLIMB</comment>
+</data>
+<data name="VehicleConsole.MotionHold" xml:space="preserve">
+  <value>HOLD</value>
+  <comment>HOLD</comment>
+</data>
+<data name="VehicleConsole.MotionDescend" xml:space="preserve">
+  <value>DESCEND</value>
+  <comment>DESCEND</comment>
+</data>
+<data name="VehicleConsole.AltitudeSetLine" xml:space="preserve">
+  <value>{FEET} FT  SET {SET} FT</value>
+  <comment>{FEET} FT  SET {SET} FT</comment>
+</data>
+<data name="VehicleConsole.PhaseAutorotating" xml:space="preserve">
+  <value>AUTOROTATING</value>
+  <comment>AUTOROTATING</comment>
+</data>
+<data name="VehicleConsole.EgtRedCaution" xml:space="preserve">
+  <value>// EGT RED - THROTTLE BACK //</value>
+  <comment>// EGT RED - THROTTLE BACK //</comment>
+</data>
+<data name="VehicleConsole.EgtRedTimedCaution" xml:space="preserve">
+  <value>// EGT RED - THROTTLE BACK - DECK FIRE IN {SECONDS}S //</value>
+  <comment>// EGT RED - THROTTLE BACK - DECK FIRE IN {SECONDS}S //</comment>
+</data>
+<data name="VehicleConsole.EgtRedLongCaution" xml:space="preserve">
+  <value>// EGT RED - THROTTLE BACK - DECK FIRE IN &gt; 4 MIN //</value>
+  <comment>// EGT RED - THROTTLE BACK - DECK FIRE IN &gt; 4 MIN //</comment>
+</data>
+<data name="VehicleConsole.DeckHotCaution" xml:space="preserve">
+  <value>// DECK HOT - STAND BY EXTINGUISHER //</value>
+  <comment>// DECK HOT - STAND BY EXTINGUISHER //</comment>
+</data>
+<data name="VehicleConsole.DeckFireCaution" xml:space="preserve">
+  <value>// DECK FIRE - EXTINGUISH //</value>
+  <comment>// DECK FIRE - EXTINGUISH //</comment>
+</data>
+<data name="VehicleConsole.DeckFireTimedCaution" xml:space="preserve">
+  <value>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN {SECONDS}S //</value>
+  <comment>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN {SECONDS}S //</comment>
+</data>
+<data name="VehicleConsole.DeckFireLongCaution" xml:space="preserve">
+  <value>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN &gt; 4 MIN //</value>
+  <comment>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN &gt; 4 MIN //</comment>
+</data>
+<data name="VehicleConsole.EngineOutCaution" xml:space="preserve">
+  <value>// ENGINE OUT - AUTOROTATING - STEER TO CLEAR GROUND //</value>
+  <comment>// ENGINE OUT - AUTOROTATING - STEER TO CLEAR GROUND //</comment>
+</data>
+<data name="VehicleConsole.RotorRpmLowCaution" xml:space="preserve">
+  <value>// ROTOR RPM LOW //</value>
+  <comment>// ROTOR RPM LOW //</comment>
+</data>
+<data name="VehicleConsole.AltLimitedCaution" xml:space="preserve">
+  <value>ALT LIMITED - ROTOR HOLDS {FEET} FT</value>
+  <comment>ALT LIMITED - ROTOR HOLDS {FEET} FT</comment>
+</data>
+<data name="VehicleConsole.PumpOffCaution" xml:space="preserve">
+  <value>PUMP OFF</value>
+  <comment>PUMP OFF</comment>
+</data>
+<data name="VehicleConsole.PressureRisingCaution" xml:space="preserve">
+  <value>PRESSURE RISING: WAIT</value>
+  <comment>PRESSURE RISING: WAIT</comment>
+</data>
+<data name="VehicleConsole.PressureLowCaution" xml:space="preserve">
+  <value>// PRESSURE LOW: LAND //</value>
+  <comment>// PRESSURE LOW: LAND //</comment>
+</data>
+<data name="VehicleConsole.MainTab" xml:space="preserve">
+  <value>MAIN</value>
+  <comment>MAIN</comment>
+</data>
+<data name="VehicleConsole.ControlsTab" xml:space="preserve">
+  <value>CONTROLS</value>
+  <comment>CONTROLS</comment>
+</data>
+<data name="VehicleConsole.FlightGroup" xml:space="preserve">
+  <value>FLIGHT</value>
+  <comment>FLIGHT</comment>
+</data>
+<data name="VehicleConsole.AircraftGroup" xml:space="preserve">
+  <value>AIRCRAFT</value>
+  <comment>AIRCRAFT</comment>
+</data>
+<data name="VehicleConsole.GeneralGroup" xml:space="preserve">
+  <value>GENERAL</value>
+  <comment>GENERAL</comment>
+</data>
+<data name="VehicleConsole.Unassigned" xml:space="preserve">
+  <value>UNASSIGNED</value>
+  <comment>UNASSIGNED</comment>
+</data>
+<data name="VehicleConsole.ConsoleChip" xml:space="preserve">
+  <value>CONSOLE CHIP</value>
+  <comment>CONSOLE CHIP</comment>
+</data>
+<data name="VehicleConsole.CabinLightsControl" xml:space="preserve">
+  <value>CABIN LIGHTS</value>
+  <comment>CABIN LIGHTS</comment>
+</data>
+<data name="VehicleConsole.NavLightsControl" xml:space="preserve">
+  <value>NAV LIGHTS</value>
+  <comment>NAV LIGHTS</comment>
+</data>
+<data name="VehicleConsole.AltitudeFeetLine" xml:space="preserve">
+  <value>{FEET} FT</value>
+  <comment>{FEET} FT</comment>
 </data>
 <data name="Def.Crate.DisplayName" xml:space="preserve">
   <value>상자</value>
@@ -12323,6 +13267,38 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Test.Thermal.Off.DisplayName" xml:space="preserve">
+  <value>test thermal goggles (off)</value>
+  <comment>test thermal goggles (off)</comment>
+</data>
+<data name="Def.Test.Thermal.Off.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Test.Thermal.Off.Verb.Toggle" xml:space="preserve">
+  <value>turn on</value>
+  <comment>turn on</comment>
+</data>
+<data name="Def.Test.Thermal.On.DisplayName" xml:space="preserve">
+  <value>test thermal goggles (on)</value>
+  <comment>test thermal goggles (on)</comment>
+</data>
+<data name="Def.Test.Thermal.On.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Test.Thermal.On.Verb.Toggle" xml:space="preserve">
+  <value>turn off</value>
+  <comment>turn off</comment>
+</data>
+<data name="Def.Test.Thermal.Empty.DisplayName" xml:space="preserve">
+  <value>test thermal goggles (empty)</value>
+  <comment>test thermal goggles (empty)</comment>
+</data>
+<data name="Def.Test.Thermal.Empty.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
 <data name="Def.Test.Helmet.Garb.DisplayName" xml:space="preserve">
   <value>테스트 의복 헬멧</value>
   <comment>test garb helmet</comment>
@@ -12738,6 +13714,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.TestLaptop.Error.DisplayName" xml:space="preserve">
   <value>테스트 노트북</value>
   <comment>test laptop</comment>
+</data>
+<data name="Def.Test.Vehicle.LitConsole.DisplayName" xml:space="preserve">
+  <value>test lit console</value>
+  <comment>test lit console</comment>
+</data>
+<data name="Def.Test.Vehicle.BusConsole.DisplayName" xml:space="preserve">
+  <value>test bus console</value>
+  <comment>test bus console</comment>
 </data>
 <data name="Def.Character.Human.DisplayName" xml:space="preserve">
   <value>인간</value>
@@ -13249,6 +14233,14 @@ The file is looked up beside this language file first, then under the game's Con
 </data>
 <data name="Def.Structure.Light.Hidden.Off.DisplayName" xml:space="preserve">
   <value>숨겨진 조명</value>
+  <comment>hidden light</comment>
+</data>
+<data name="Def.Structure.Light.Hidden.Red.DisplayName" xml:space="preserve">
+  <value>hidden light</value>
+  <comment>hidden light</comment>
+</data>
+<data name="Def.Structure.Light.Hidden.Red.Off.DisplayName" xml:space="preserve">
+  <value>hidden light</value>
   <comment>hidden light</comment>
 </data>
 <data name="Def.Structure.Speaker.Nightclub.DisplayName" xml:space="preserve">
@@ -29535,17 +30527,65 @@ The file is looked up beside this language file first, then under the game's Con
   <value>금고</value>
   <comment>safe</comment>
 </data>
+<data name="Def.Obj.Structure.Safe.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.Open.DisplayName" xml:space="preserve">
+  <value>safe</value>
+  <comment>safe</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
+</data>
 <data name="Def.Obj.Structure.Safe.ClOffice.DisplayName" xml:space="preserve">
   <value>금고</value>
   <comment>safe</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.ClOffice.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.ClOffice.Open.DisplayName" xml:space="preserve">
+  <value>safe</value>
+  <comment>safe</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.ClOffice.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
 </data>
 <data name="Def.Obj.Structure.Safe.CoOffice.DisplayName" xml:space="preserve">
   <value>금고</value>
   <comment>safe</comment>
 </data>
+<data name="Def.Obj.Structure.Safe.CoOffice.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.CoOffice.Open.DisplayName" xml:space="preserve">
+  <value>safe</value>
+  <comment>safe</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.CoOffice.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
+</data>
 <data name="Def.Obj.Structure.Safe.Floor.DisplayName" xml:space="preserve">
   <value>바닥 금고</value>
   <comment>floor safe</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.Floor.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.Floor.Open.DisplayName" xml:space="preserve">
+  <value>floor safe</value>
+  <comment>floor safe</comment>
+</data>
+<data name="Def.Obj.Structure.Safe.Floor.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
 </data>
 <data name="Def.Obj.Structure.ShipAmmo.Sentry.DisplayName" xml:space="preserve">
   <value>A/C-49-P 공중 배치 센트리</value>
@@ -47891,6 +48931,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Obj.Item.Prop.Colony.Canister.Family" xml:space="preserve">
+  <value>fuel tanks</value>
+  <comment>fuel tanks</comment>
+</data>
 <data name="Def.Obj.Item.Prop.Colony.Canister.High.DisplayName" xml:space="preserve">
   <value>연료통</value>
   <comment>fuel can</comment>
@@ -47898,6 +48942,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.Obj.Item.Prop.Colony.Canister.High.Verb.PickUp" xml:space="preserve">
   <value>줍기</value>
   <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Prop.Colony.Canister.High.Family" xml:space="preserve">
+  <value>fuel tanks</value>
+  <comment>fuel tanks</comment>
 </data>
 <data name="Def.Obj.Item.Prop.Colony.Canister.Medium.DisplayName" xml:space="preserve">
   <value>연료통</value>
@@ -47907,6 +48955,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Obj.Item.Prop.Colony.Canister.Medium.Family" xml:space="preserve">
+  <value>fuel tanks</value>
+  <comment>fuel tanks</comment>
+</data>
 <data name="Def.Obj.Item.Prop.Colony.Canister.Low.DisplayName" xml:space="preserve">
   <value>연료통</value>
   <comment>fuel can</comment>
@@ -47914,6 +48966,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.Obj.Item.Prop.Colony.Canister.Low.Verb.PickUp" xml:space="preserve">
   <value>줍기</value>
   <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Prop.Colony.Canister.Low.Family" xml:space="preserve">
+  <value>fuel tanks</value>
+  <comment>fuel tanks</comment>
 </data>
 <data name="Def.Obj.Item.Prop.Colony.Canister.Empty.DisplayName" xml:space="preserve">
   <value>연료통</value>
@@ -47923,6 +48979,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Obj.Item.Prop.Colony.Canister.Empty.Family" xml:space="preserve">
+  <value>fuel tanks</value>
+  <comment>fuel tanks</comment>
+</data>
 <data name="Def.Obj.Item.Prop.Colony.Canister.Alt1.DisplayName" xml:space="preserve">
   <value>연료통</value>
   <comment>fuel can</comment>
@@ -47931,6 +48991,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Obj.Item.Prop.Colony.Canister.Alt1.Family" xml:space="preserve">
+  <value>fuel tanks</value>
+  <comment>fuel tanks</comment>
+</data>
 <data name="Def.Obj.Item.Prop.Colony.Canister.Alt2.DisplayName" xml:space="preserve">
   <value>연료통</value>
   <comment>fuel can</comment>
@@ -47938,6 +49002,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.Obj.Item.Prop.Colony.Canister.Alt2.Verb.PickUp" xml:space="preserve">
   <value>줍기</value>
   <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Prop.Colony.Canister.Alt2.Family" xml:space="preserve">
+  <value>fuel tanks</value>
+  <comment>fuel tanks</comment>
 </data>
 <data name="Def.Obj.Item.Prop.Colony.Game.DisplayName" xml:space="preserve">
   <value>휴대용 게임기</value>
@@ -74895,6 +75963,38 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Clothing.TigEmber.DisplayName" xml:space="preserve">
+  <value>TIG-2 'Ember' thermal imaging goggles</value>
+  <comment>TIG-2 'Ember' thermal imaging goggles</comment>
+</data>
+<data name="Def.Clothing.TigEmber.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Clothing.TigEmber.Verb.Toggle" xml:space="preserve">
+  <value>turn on</value>
+  <comment>turn on</comment>
+</data>
+<data name="Def.Clothing.TigEmber.On.DisplayName" xml:space="preserve">
+  <value>TIG-2 'Ember' thermal imaging goggles</value>
+  <comment>TIG-2 'Ember' thermal imaging goggles</comment>
+</data>
+<data name="Def.Clothing.TigEmber.On.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Clothing.TigEmber.On.Verb.Toggle" xml:space="preserve">
+  <value>turn off</value>
+  <comment>turn off</comment>
+</data>
+<data name="Def.Clothing.TigEmber.Empty.DisplayName" xml:space="preserve">
+  <value>TIG-2 'Ember' thermal imaging goggles</value>
+  <comment>TIG-2 'Ember' thermal imaging goggles</comment>
+</data>
+<data name="Def.Clothing.TigEmber.Empty.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
 <data name="Def.TestingJanibucketWatered.DisplayName" xml:space="preserve">
   <value>청소 양동이</value>
   <comment>janitorial bucket</comment>
@@ -75251,6 +76351,26 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Obj.Item.Device.PilotBeacon.DisplayName" xml:space="preserve">
+  <value>flight crew beacon</value>
+  <comment>flight crew beacon</comment>
+</data>
+<data name="Def.Obj.Item.Device.PilotBeacon.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Device.PilotBeacon.Verb.Toggle" xml:space="preserve">
+  <value>activate</value>
+  <comment>activate</comment>
+</data>
+<data name="Def.Obj.Item.Device.PilotBeacon.On.DisplayName" xml:space="preserve">
+  <value>flight crew beacon</value>
+  <comment>flight crew beacon</comment>
+</data>
+<data name="Def.Obj.Item.Device.PilotBeacon.On.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
 <data name="Def.Obj.Item.Device.SignalTracker.DisplayName" xml:space="preserve">
   <value>신호 추적기</value>
   <comment>signal tracker</comment>
@@ -75369,7 +76489,7 @@ The file is looked up beside this language file first, then under the game's Con
 </data>
 <data name="Def.Obj.Item.M2Kit.Tripod.DisplayName" xml:space="preserve">
   <value>M2 삼각대</value>
-  <comment>M2 tripod</comment>
+  <comment>weapon tripod</comment>
 </data>
 <data name="Def.Obj.Item.M2Kit.Tripod.Verb.PickUp" xml:space="preserve">
   <value>줍기</value>
@@ -75377,11 +76497,15 @@ The file is looked up beside this language file first, then under the game's Con
 </data>
 <data name="Def.Obj.Structure.M2Browning.Tripod.DisplayName" xml:space="preserve">
   <value>M2 삼각대</value>
-  <comment>M2 tripod</comment>
+  <comment>weapon tripod</comment>
 </data>
 <data name="Def.Obj.Structure.M2Browning.Tripod.Upgrade.0.Label" xml:space="preserve">
   <value>M2 장착</value>
   <comment>attach the m2</comment>
+</data>
+<data name="Def.Obj.Structure.M2Browning.Tripod.Upgrade.1.Label" xml:space="preserve">
+  <value>attach the mk19</value>
+  <comment>attach the mk19</comment>
 </data>
 <data name="Def.Obj.Item.M2Kit.Gun.DisplayName" xml:space="preserve">
   <value>M2 브라우닝</value>
@@ -75822,6 +76946,218 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.Obj.Item.Device.CrewMonitor.Empty.Verb.PickUp" xml:space="preserve">
   <value>줍기</value>
   <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.PalmTree.DisplayName" xml:space="preserve">
+  <value>palm tree</value>
+  <comment>palm tree</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.PalmTree0.DisplayName" xml:space="preserve">
+  <value>palm tree</value>
+  <comment>palm tree</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.PalmTree1.DisplayName" xml:space="preserve">
+  <value>palm tree</value>
+  <comment>palm tree</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Pandanus.DisplayName" xml:space="preserve">
+  <value>pandanus</value>
+  <comment>pandanus</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Pandanus0.DisplayName" xml:space="preserve">
+  <value>pandanus</value>
+  <comment>pandanus</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Pandanus1.DisplayName" xml:space="preserve">
+  <value>pandanus</value>
+  <comment>pandanus</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Banana.DisplayName" xml:space="preserve">
+  <value>banana tree</value>
+  <comment>banana tree</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Banana0.DisplayName" xml:space="preserve">
+  <value>banana tree</value>
+  <comment>banana tree</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Banana1.DisplayName" xml:space="preserve">
+  <value>banana tree</value>
+  <comment>banana tree</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Hibiscus.DisplayName" xml:space="preserve">
+  <value>hibiscus</value>
+  <comment>hibiscus</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Hibiscus0.DisplayName" xml:space="preserve">
+  <value>hibiscus</value>
+  <comment>hibiscus</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Hibiscus1.DisplayName" xml:space="preserve">
+  <value>hibiscus</value>
+  <comment>hibiscus</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Fern.DisplayName" xml:space="preserve">
+  <value>fern</value>
+  <comment>fern</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Fern0.DisplayName" xml:space="preserve">
+  <value>fern</value>
+  <comment>fern</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.Fern1.DisplayName" xml:space="preserve">
+  <value>fern</value>
+  <comment>fern</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.ElephantEar.DisplayName" xml:space="preserve">
+  <value>elephant ear</value>
+  <comment>elephant ear</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.ElephantEar0.DisplayName" xml:space="preserve">
+  <value>elephant ear</value>
+  <comment>elephant ear</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.ElephantEar1.DisplayName" xml:space="preserve">
+  <value>elephant ear</value>
+  <comment>elephant ear</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.CoastalGrass.DisplayName" xml:space="preserve">
+  <value>coastal grass</value>
+  <comment>coastal grass</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.CoastalGrass0.DisplayName" xml:space="preserve">
+  <value>coastal grass</value>
+  <comment>coastal grass</comment>
+</data>
+<data name="Def.Obj.Structure.Flora.Tropical.CoastalGrass1.DisplayName" xml:space="preserve">
+  <value>coastal grass</value>
+  <comment>coastal grass</comment>
+</data>
+<data name="Def.Obj.Item.Mk19Kit.Gun.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Item.Mk19Kit.Gun.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Structure.Mk19.Bare.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Structure.Mk19.Empty.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Structure.Mk19.Loaded.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Item.Weapon.Gun.Launcher.Mk19Internal.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Item.Weapon.Gun.Launcher.Mk19Internal.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Ammo.DisplayName" xml:space="preserve">
+  <value>MK19 ammo box (40mm)</value>
+  <comment>MK19 ammo box (40mm)</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Ammo.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Ammo.Open.DisplayName" xml:space="preserve">
+  <value>MK19 ammo box (40mm)</value>
+  <comment>MK19 ammo box (40mm)</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Ammo.Open.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Kit.DisplayName" xml:space="preserve">
+  <value>MK19 case</value>
+  <comment>MK19 case</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Kit.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Kit.Open.DisplayName" xml:space="preserve">
+  <value>MK19 case</value>
+  <comment>MK19 case</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.Mk19Kit.Open.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Hull.DisplayName" xml:space="preserve">
+  <value>UH-1H Huey</value>
+  <comment>UH-1H Huey</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Door.DisplayName" xml:space="preserve">
+  <value>cabin door</value>
+  <comment>cabin door</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Door.Opening.DisplayName" xml:space="preserve">
+  <value>cabin door</value>
+  <comment>cabin door</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Door.Open.DisplayName" xml:space="preserve">
+  <value>cabin door</value>
+  <comment>cabin door</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Door.Closing.DisplayName" xml:space="preserve">
+  <value>cabin door</value>
+  <comment>cabin door</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Lamp.DisplayName" xml:space="preserve">
+  <value>cabin lamp</value>
+  <comment>cabin lamp</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Lamp.Off.DisplayName" xml:space="preserve">
+  <value>cabin lamp</value>
+  <comment>cabin lamp</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Console.DisplayName" xml:space="preserve">
+  <value>flight console</value>
+  <comment>flight console</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Console.Left.DisplayName" xml:space="preserve">
+  <value>flight console</value>
+  <comment>flight console</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Console.Right.DisplayName" xml:space="preserve">
+  <value>flight console</value>
+  <comment>flight console</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.FuelPort.DisplayName" xml:space="preserve">
+  <value>fuel inlet</value>
+  <comment>fuel inlet</comment>
+</data>
+<data name="Def.Obj.Structure.Chair.Heli.DisplayName" xml:space="preserve">
+  <value>helicopter seat</value>
+  <comment>helicopter seat</comment>
+</data>
+<data name="Def.Obj.Structure.Chair.Heli.Pilot.DisplayName" xml:space="preserve">
+  <value>pilot seat</value>
+  <comment>pilot seat</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Extinguisher.DisplayName" xml:space="preserve">
+  <value>extinguisher cabinet</value>
+  <comment>extinguisher cabinet</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Extinguisher.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Extinguisher.Open.DisplayName" xml:space="preserve">
+  <value>extinguisher cabinet</value>
+  <comment>extinguisher cabinet</comment>
+</data>
+<data name="Def.Obj.Vehicle.UH1H.Extinguisher.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
 </data>
 <data name="StackFamily.TestPlank" xml:space="preserve">
   <value>TestPlank</value>
@@ -76415,6 +77751,22 @@ The file is looked up beside this language file first, then under the game's Con
   <value>과학 분야 훈련을 받았다. 자신에게 하는 수술조차 더 빠르고 더 안정적이다.</value>
   <comment>Trained in the sciences. Faster, more reliable surgery, even on yourself.</comment>
 </data>
+<data name="Trait.Lightweight.Name" xml:space="preserve">
+  <value>Lightweight</value>
+  <comment>Lightweight</comment>
+</data>
+<data name="Trait.Lightweight.Flavor" xml:space="preserve">
+  <value>Two beers in and the room is already turning.</value>
+  <comment>Two beers in and the room is already turning.</comment>
+</data>
+<data name="Trait.HeavyDrinker.Name" xml:space="preserve">
+  <value>Heavy Drinker</value>
+  <comment>Heavy Drinker</comment>
+</data>
+<data name="Trait.HeavyDrinker.Flavor" xml:space="preserve">
+  <value>Has put away enough to know exactly how much more they can take.</value>
+  <comment>Has put away enough to know exactly how much more they can take.</comment>
+</data>
 <data name="Emote.Warcry.GetSome" xml:space="preserve">
   <value>덤벼 봐!</value>
   <comment>GET SOME!</comment>
@@ -76853,7 +78205,7 @@ The file is looked up beside this language file first, then under the game's Con
 </data>
 <data name="Construction.M2Tripod.DisplayName" xml:space="preserve">
   <value>M2 삼각대</value>
-  <comment>M2 tripod</comment>
+  <comment>weapon tripod</comment>
 </data>
 <data name="Construction.ContainmentEmitter.DisplayName" xml:space="preserve">
   <value>격리 방출기</value>
@@ -79174,6 +80526,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Loadout.Ert.CbrnOperator.Name" xml:space="preserve">
   <value>CBRN 운용병</value>
   <comment>CBRN Operator</comment>
+</data>
+<data name="Loadout.Ert.Pilot.Name" xml:space="preserve">
+  <value>Pilot</value>
+  <comment>Pilot</comment>
 </data>
 <data name="Loadout.Janitor.Name" xml:space="preserve">
   <value>관리인</value>
