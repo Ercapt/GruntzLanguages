@@ -491,6 +491,18 @@ The file is looked up beside this language file first, then under the game's Con
   <value>없음</value>
   <comment>None</comment>
 </data>
+<data name="Enum.HdrFormat.Auto" xml:space="preserve">
+  <value>Auto</value>
+  <comment>Auto</comment>
+</data>
+<data name="Enum.HdrFormat.Scrgb" xml:space="preserve">
+  <value>Scrgb</value>
+  <comment>Scrgb</comment>
+</data>
+<data name="Enum.HdrFormat.Hdr10" xml:space="preserve">
+  <value>Hdr10</value>
+  <comment>Hdr10</comment>
+</data>
 <data name="Enum.AmbientOcclusionQuality.Off" xml:space="preserve">
   <value>끔</value>
   <comment>Off</comment>
@@ -518,6 +530,18 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Enum.BelowFloorsQuality.Low" xml:space="preserve">
   <value>낮음</value>
   <comment>Low</comment>
+</data>
+<data name="Enum.DecalMemory.Low" xml:space="preserve">
+  <value>Low</value>
+  <comment>Low</comment>
+</data>
+<data name="Enum.DecalMemory.Normal" xml:space="preserve">
+  <value>Normal</value>
+  <comment>Normal</comment>
+</data>
+<data name="Enum.DecalMemory.High" xml:space="preserve">
+  <value>High</value>
+  <comment>High</comment>
 </data>
 <data name="Chat.Ignite" xml:space="preserve">
   <value>{ACTOR}이(가) {USED}(으)로 {TARGET}에 불을 붙입니다.</value>
@@ -2250,6 +2274,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="ConstructionPlacement.RotateHint" xml:space="preserve">
   <value>{KEY}을(를) 눌러 회전</value>
   <comment>press {KEY} to rotate</comment>
+</data>
+<data name="ConstructionPlacement.VehicleRefused" xml:space="preserve">
+  <value>cannot build this aboard the {VEHICLE}</value>
+  <comment>cannot build this aboard the {VEHICLE}</comment>
+</data>
+<data name="ConstructionPlacement.VehicleRefusedHint" xml:space="preserve">
+  <value>only fittings made for this vehicle build aboard</value>
+  <comment>only fittings made for this vehicle build aboard</comment>
 </data>
 <data name="LadderRadial.Cancel" xml:space="preserve">
   <value>취소</value>
@@ -7211,9 +7243,17 @@ The file is looked up beside this language file first, then under the game's Con
   <value>SPRITE RELIEF</value>
   <comment>SPRITE RELIEF</comment>
 </data>
+<data name="Settings.DecalGlossLabel" xml:space="preserve">
+  <value>WET DECALS</value>
+  <comment>WET DECALS</comment>
+</data>
 <data name="Settings.BelowFloorsLabel" xml:space="preserve">
   <value>바닥 아래</value>
   <comment>BELOW FLOORS</comment>
+</data>
+<data name="Settings.DecalMemoryLabel" xml:space="preserve">
+  <value>DECAL MEMORY</value>
+  <comment>DECAL MEMORY</comment>
 </data>
 <data name="Settings.BloomLabel" xml:space="preserve">
   <value>블룸</value>
@@ -7234,6 +7274,26 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Settings.GammaLabel" xml:space="preserve">
   <value>톤 매핑 감마</value>
   <comment>TONEMAP GAMMA</comment>
+</data>
+<data name="Settings.HdrLabel" xml:space="preserve">
+  <value>HDR</value>
+  <comment>HDR</comment>
+</data>
+<data name="Settings.HdrFormatLabel" xml:space="preserve">
+  <value>HDR FORMAT</value>
+  <comment>HDR FORMAT</comment>
+</data>
+<data name="Settings.HdrPaperWhiteLabel" xml:space="preserve">
+  <value>HDR PAPER WHITE</value>
+  <comment>HDR PAPER WHITE</comment>
+</data>
+<data name="Settings.HdrPeakBrightnessLabel" xml:space="preserve">
+  <value>HDR PEAK BRIGHTNESS</value>
+  <comment>HDR PEAK BRIGHTNESS</comment>
+</data>
+<data name="Settings.NitsSuffix" xml:space="preserve">
+  <value> NITS</value>
+  <comment> NITS</comment>
 </data>
 <data name="Settings.MasterLabel" xml:space="preserve">
   <value>주 음량</value>
@@ -10967,6 +11027,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>rotor too low to lift</value>
   <comment>rotor too low to lift</comment>
 </data>
+<data name="PilotKeys.MountedRefused" xml:space="preserve">
+  <value>a weapon mount holds the door open</value>
+  <comment>a weapon mount holds the door open</comment>
+</data>
 <data name="PilotKeys.AbortToast" xml:space="preserve">
   <value>start aborted</value>
   <comment>start aborted</comment>
@@ -11371,6 +11435,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>// TOO HEAVY - LIGHTEN THE CABIN //</value>
   <comment>// TOO HEAVY - LIGHTEN THE CABIN //</comment>
 </data>
+<data name="VehicleConsole.MountedBanner" xml:space="preserve">
+  <value>// DOOR MOUNT FITTED //</value>
+  <comment>// DOOR MOUNT FITTED //</comment>
+</data>
 <data name="VehicleConsole.HoldToStartLabel" xml:space="preserve">
   <value>HOLD TO START</value>
   <comment>HOLD TO START</comment>
@@ -11423,14 +11491,6 @@ The file is looked up beside this language file first, then under the game's Con
   <value>// EGT RED - THROTTLE BACK //</value>
   <comment>// EGT RED - THROTTLE BACK //</comment>
 </data>
-<data name="VehicleConsole.EgtRedTimedCaution" xml:space="preserve">
-  <value>// EGT RED - THROTTLE BACK - DECK FIRE IN {SECONDS}S //</value>
-  <comment>// EGT RED - THROTTLE BACK - DECK FIRE IN {SECONDS}S //</comment>
-</data>
-<data name="VehicleConsole.EgtRedLongCaution" xml:space="preserve">
-  <value>// EGT RED - THROTTLE BACK - DECK FIRE IN &gt; 4 MIN //</value>
-  <comment>// EGT RED - THROTTLE BACK - DECK FIRE IN &gt; 4 MIN //</comment>
-</data>
 <data name="VehicleConsole.DeckHotCaution" xml:space="preserve">
   <value>// DECK HOT - STAND BY EXTINGUISHER //</value>
   <comment>// DECK HOT - STAND BY EXTINGUISHER //</comment>
@@ -11438,14 +11498,6 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="VehicleConsole.DeckFireCaution" xml:space="preserve">
   <value>// DECK FIRE - EXTINGUISH //</value>
   <comment>// DECK FIRE - EXTINGUISH //</comment>
-</data>
-<data name="VehicleConsole.DeckFireTimedCaution" xml:space="preserve">
-  <value>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN {SECONDS}S //</value>
-  <comment>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN {SECONDS}S //</comment>
-</data>
-<data name="VehicleConsole.DeckFireLongCaution" xml:space="preserve">
-  <value>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN &gt; 4 MIN //</value>
-  <comment>// DECK FIRE - EXTINGUISH - ENGINE FAILS IN &gt; 4 MIN //</comment>
 </data>
 <data name="VehicleConsole.EngineOutCaution" xml:space="preserve">
   <value>// ENGINE OUT - AUTOROTATING - STEER TO CLEAR GROUND //</value>
@@ -77091,6 +77143,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>pick up</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Obj.Vehicle.Light.Hidden.Red.DisplayName" xml:space="preserve">
+  <value>hidden light</value>
+  <comment>hidden light</comment>
+</data>
+<data name="Def.Obj.Vehicle.Light.Hidden.Red.Off.DisplayName" xml:space="preserve">
+  <value>hidden light</value>
+  <comment>hidden light</comment>
+</data>
 <data name="Def.Obj.Vehicle.UH1H.Hull.DisplayName" xml:space="preserve">
   <value>UH-1H Huey</value>
   <comment>UH-1H Huey</comment>
@@ -77158,6 +77218,62 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.Obj.Vehicle.UH1H.Extinguisher.Open.Verb.Toggle" xml:space="preserve">
   <value>close</value>
   <comment>close</comment>
+</data>
+<data name="Def.Obj.Item.VehicleMountKit.DisplayName" xml:space="preserve">
+  <value>vehicle weapon mount</value>
+  <comment>vehicle weapon mount</comment>
+</data>
+<data name="Def.Obj.Item.VehicleMountKit.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.Base.DisplayName" xml:space="preserve">
+  <value>vehicle weapon mount</value>
+  <comment>vehicle weapon mount</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.Base.Upgrade.0.Label" xml:space="preserve">
+  <value>attach the m2</value>
+  <comment>attach the m2</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.Base.Upgrade.1.Label" xml:space="preserve">
+  <value>attach the mk19</value>
+  <comment>attach the mk19</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.M2.Empty.DisplayName" xml:space="preserve">
+  <value>M2 Browning</value>
+  <comment>M2 Browning</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.M2.Loaded.DisplayName" xml:space="preserve">
+  <value>M2 Browning</value>
+  <comment>M2 Browning</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.Mk19.Bare.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.Mk19.Empty.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.Mk19.Loaded.DisplayName" xml:space="preserve">
+  <value>MK19 grenade launcher</value>
+  <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.VehicleMountKit.DisplayName" xml:space="preserve">
+  <value>vehicle mount case</value>
+  <comment>vehicle mount case</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.VehicleMountKit.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.VehicleMountKit.Open.DisplayName" xml:space="preserve">
+  <value>vehicle mount case</value>
+  <comment>vehicle mount case</comment>
+</data>
+<data name="Def.Obj.Item.Storage.Box.VehicleMountKit.Open.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
 </data>
 <data name="StackFamily.TestPlank" xml:space="preserve">
   <value>TestPlank</value>
@@ -77270,6 +77386,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="StackFamily.containment emitter kit" xml:space="preserve">
   <value>격리 방출기 키트</value>
   <comment>containment emitter kit</comment>
+</data>
+<data name="StackFamily.vehicle mount kit" xml:space="preserve">
+  <value>vehicle mount kit</value>
+  <comment>vehicle mount kit</comment>
 </data>
 <data name="Honor.ApexPredator.Name" xml:space="preserve">
   <value>최상위 포식자</value>
@@ -78210,6 +78330,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Construction.ContainmentEmitter.DisplayName" xml:space="preserve">
   <value>격리 방출기</value>
   <comment>containment emitter</comment>
+</data>
+<data name="Construction.VehicleMount.DisplayName" xml:space="preserve">
+  <value>vehicle weapon mount</value>
+  <comment>vehicle weapon mount</comment>
 </data>
 <data name="Reagent.Medical.Coagulex.Name" xml:space="preserve">
   <value>코아귤렉스</value>
