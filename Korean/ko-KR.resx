@@ -2283,6 +2283,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>only fittings made for this vehicle build aboard</value>
   <comment>only fittings made for this vehicle build aboard</comment>
 </data>
+<data name="ConstructionPlacement.DoorwayRefusesMount" xml:space="preserve">
+  <value>this doorway takes no weapon mount</value>
+  <comment>this doorway takes no weapon mount</comment>
+</data>
+<data name="ConstructionPlacement.DoorwayRefusesMountHint" xml:space="preserve">
+  <value>build it in another doorway</value>
+  <comment>build it in another doorway</comment>
+</data>
 <data name="LadderRadial.Cancel" xml:space="preserve">
   <value>취소</value>
   <comment>CANCEL</comment>
@@ -7674,6 +7682,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="LoadoutSelect.RejectPhaseClosed" xml:space="preserve">
   <value>이 단계에서는 배치할 수 없음</value>
   <comment>deployment is not available this phase</comment>
+</data>
+<data name="LoadoutSelect.RejectNoRespawns" xml:space="preserve">
+  <value>you fell this round // no respawns this phase, you may observe</value>
+  <comment>you fell this round // no respawns this phase, you may observe</comment>
 </data>
 <data name="LoadoutSelect.RejectGeneric" xml:space="preserve">
   <value>선택 실패, 다시 시도하십시오</value>
