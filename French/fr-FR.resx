@@ -2883,6 +2883,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>Lying low with a braced aim</value>
   <comment>Lying low with a braced aim</comment>
 </data>
+<data name="Moodlet.Flavor.ProneForced" xml:space="preserve">
+  <value>Flat on the ground with no way up</value>
+  <comment>Flat on the ground with no way up</comment>
+</data>
 <data name="Moodlet.Flavor.Hidden.Cover" xml:space="preserve">
   <value>Out of sight inside cover</value>
   <comment>Out of sight inside cover</comment>
@@ -3154,6 +3158,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Moodlet.Hint.Prone" xml:space="preserve">
   <value>Toggle Prone to stand</value>
   <comment>Toggle Prone to stand</comment>
+</data>
+<data name="Moodlet.Hint.ProneForced" xml:space="preserve">
+  <value>Unable to stand</value>
+  <comment>Unable to stand</comment>
 </data>
 <data name="Moodlet.Hint.Hidden.Dark" xml:space="preserve">
   <value>Noise and closeness still give you away</value>
@@ -3594,6 +3602,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Moodlet.Unit.ExplosionDamage" xml:space="preserve">
   <value> Explosion damage</value>
   <comment> Explosion damage</comment>
+</data>
+<data name="Moodlet.Unit.MeleeDamage" xml:space="preserve">
+  <value> Melee damage</value>
+  <comment> Melee damage</comment>
 </data>
 <data name="Moodlet.Unit.DamageToXenos" xml:space="preserve">
   <value> Damage to xenos</value>
