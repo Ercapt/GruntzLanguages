@@ -259,6 +259,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>THIS SERVER REQUIRES AN AHWOO ACCOUNT. SIGN IN TO THE AHWOO CLIENT AND RECONNECT.</value>
   <comment>THIS SERVER REQUIRES AN AHWOO ACCOUNT. SIGN IN TO THE AHWOO CLIENT AND RECONNECT.</comment>
 </data>
+<data name="MainMenu.AhwooTooNewTitle" xml:space="preserve">
+  <value>ACCOUNT TOO NEW</value>
+  <comment>ACCOUNT TOO NEW</comment>
+</data>
+<data name="MainMenu.AhwooTooNewLine" xml:space="preserve">
+  <value>THIS SERVER IS LOCKED TO ESTABLISHED AHWOO ACCOUNTS FOR NOW. YOUR ACCOUNT IS TOO NEW TO JOIN. TRY AGAIN LATER.</value>
+  <comment>THIS SERVER IS LOCKED TO ESTABLISHED AHWOO ACCOUNTS FOR NOW. YOUR ACCOUNT IS TOO NEW TO JOIN. TRY AGAIN LATER.</comment>
+</data>
 <data name="MainMenu.CloseLabel" xml:space="preserve">
   <value>닫기</value>
   <comment>CLOSE</comment>
