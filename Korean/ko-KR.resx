@@ -1055,6 +1055,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>The {TARGET} is crushed under the {USED}!</value>
   <comment>The {TARGET} is crushed under the {USED}!</comment>
 </data>
+<data name="Chat.VehicleCrushThrown" xml:space="preserve">
+  <value>The {TARGET} is thrown clear of the {USED}!</value>
+  <comment>The {TARGET} is thrown clear of the {USED}!</comment>
+</data>
 <data name="Chat.GestationCough" xml:space="preserve">
   <value>{ACTOR}이(가) 기침합니다.</value>
   <comment>{ACTOR} coughs.</comment>
