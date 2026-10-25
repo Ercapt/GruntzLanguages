@@ -7275,6 +7275,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>WET DECALS</value>
   <comment>WET DECALS</comment>
 </data>
+<data name="Settings.ReflectionsLabel" xml:space="preserve">
+  <value>REFLECTIONS</value>
+  <comment>REFLECTIONS</comment>
+</data>
 <data name="Settings.BelowFloorsLabel" xml:space="preserve">
   <value>BELOW FLOORS</value>
   <comment>BELOW FLOORS</comment>
@@ -7410,6 +7414,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Settings.AlwaysXrayOverlayLabel" xml:space="preserve">
   <value>ALWAYS X-RAY VEHICLE ROOF</value>
   <comment>ALWAYS X-RAY VEHICLE ROOF</comment>
+</data>
+<data name="Settings.XrayOutlineLabel" xml:space="preserve">
+  <value>X-RAY VEHICLE OUTLINE</value>
+  <comment>X-RAY VEHICLE OUTLINE</comment>
 </data>
 <data name="Settings.NoLanguageFiles" xml:space="preserve">
   <value>~NO LANGUAGE FILES</value>
@@ -12390,6 +12398,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.TestKit.Open.DisplayName" xml:space="preserve">
   <value>test kit</value>
   <comment>test kit</comment>
+</data>
+<data name="Def.TestBag.DisplayName" xml:space="preserve">
+  <value>test bag</value>
+  <comment>test bag</comment>
+</data>
+<data name="Def.TestBag.Open.DisplayName" xml:space="preserve">
+  <value>test bag</value>
+  <comment>test bag</comment>
 </data>
 <data name="Def.TestKit.Filled.DisplayName" xml:space="preserve">
   <value>test kit</value>
@@ -76591,6 +76607,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>attach the mk19</value>
   <comment>attach the mk19</comment>
 </data>
+<data name="Def.Obj.Structure.M2Browning.Tripod.Upgrade.2.Label" xml:space="preserve">
+  <value>attach the flamethrower</value>
+  <comment>attach the flamethrower</comment>
+</data>
 <data name="Def.Obj.Item.M2Kit.Gun.DisplayName" xml:space="preserve">
   <value>M2 Browning</value>
   <comment>M2 Browning</comment>
@@ -77251,6 +77271,66 @@ The file is looked up beside this language file first, then under the game's Con
   <value>close</value>
   <comment>close</comment>
 </data>
+<data name="Def.Obj.Item.FlamerTurretKit.Gun.DisplayName" xml:space="preserve">
+  <value>flamethrower turret</value>
+  <comment>flamethrower turret</comment>
+</data>
+<data name="Def.Obj.Item.FlamerTurretKit.Gun.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Structure.FlamerTurret.Empty.DisplayName" xml:space="preserve">
+  <value>flamethrower turret</value>
+  <comment>flamethrower turret</comment>
+</data>
+<data name="Def.Obj.Structure.FlamerTurret.Loaded.DisplayName" xml:space="preserve">
+  <value>flamethrower turret</value>
+  <comment>flamethrower turret</comment>
+</data>
+<data name="Def.Obj.Item.Weapon.Gun.Flamer.TurretInternal.DisplayName" xml:space="preserve">
+  <value>flamethrower turret</value>
+  <comment>flamethrower turret</comment>
+</data>
+<data name="Def.Obj.Item.Weapon.Gun.Flamer.TurretInternal.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.DisplayName" xml:space="preserve">
+  <value>flamethrower turret fuel drum</value>
+  <comment>flamethrower turret fuel drum</comment>
+</data>
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.Empty.DisplayName" xml:space="preserve">
+  <value>flamethrower turret fuel drum</value>
+  <comment>flamethrower turret fuel drum</comment>
+</data>
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.Empty.Verb.PickUp" xml:space="preserve">
+  <value>pick up</value>
+  <comment>pick up</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.FlamerTurret.Descending.DisplayName" xml:space="preserve">
+  <value>flamethrower turret crate</value>
+  <comment>flamethrower turret crate</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.FlamerTurret.DisplayName" xml:space="preserve">
+  <value>flamethrower turret crate</value>
+  <comment>flamethrower turret crate</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.FlamerTurret.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.FlamerTurret.Open.DisplayName" xml:space="preserve">
+  <value>flamethrower turret crate</value>
+  <comment>flamethrower turret crate</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.FlamerTurret.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
+</data>
 <data name="Def.Obj.Item.VehicleMountKit.DisplayName" xml:space="preserve">
   <value>vehicle weapon mount</value>
   <comment>vehicle weapon mount</comment>
@@ -77271,6 +77351,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>attach the mk19</value>
   <comment>attach the mk19</comment>
 </data>
+<data name="Def.Obj.Structure.VehicleMount.Base.Upgrade.2.Label" xml:space="preserve">
+  <value>attach the flamethrower</value>
+  <comment>attach the flamethrower</comment>
+</data>
 <data name="Def.Obj.Structure.VehicleMount.M2.Empty.DisplayName" xml:space="preserve">
   <value>M2 Browning</value>
   <comment>M2 Browning</comment>
@@ -77290,6 +77374,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.Obj.Structure.VehicleMount.Mk19.Loaded.DisplayName" xml:space="preserve">
   <value>MK19 grenade launcher</value>
   <comment>MK19 grenade launcher</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.FlamerTurret.Empty.DisplayName" xml:space="preserve">
+  <value>flamethrower turret</value>
+  <comment>flamethrower turret</comment>
+</data>
+<data name="Def.Obj.Structure.VehicleMount.FlamerTurret.Loaded.DisplayName" xml:space="preserve">
+  <value>flamethrower turret</value>
+  <comment>flamethrower turret</comment>
 </data>
 <data name="Def.Obj.Item.Storage.Box.VehicleMountKit.DisplayName" xml:space="preserve">
   <value>vehicle mount case</value>
