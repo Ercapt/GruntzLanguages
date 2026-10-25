@@ -267,6 +267,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>THIS SERVER IS LOCKED TO ESTABLISHED AHWOO ACCOUNTS FOR NOW. YOUR ACCOUNT IS TOO NEW TO JOIN. TRY AGAIN LATER.</value>
   <comment>THIS SERVER IS LOCKED TO ESTABLISHED AHWOO ACCOUNTS FOR NOW. YOUR ACCOUNT IS TOO NEW TO JOIN. TRY AGAIN LATER.</comment>
 </data>
+<data name="MainMenu.VpnRefusedTitle" xml:space="preserve">
+  <value>VPN DETECTED</value>
+  <comment>VPN DETECTED</comment>
+</data>
+<data name="MainMenu.VpnRefusedLine" xml:space="preserve">
+  <value>THIS SERVER DOES NOT ACCEPT VPN, PROXY OR TOR CONNECTIONS. DISCONNECT YOUR VPN AND RECONNECT, OR ASK AN ADMIN TO BE ALLOWED.</value>
+  <comment>THIS SERVER DOES NOT ACCEPT VPN, PROXY OR TOR CONNECTIONS. DISCONNECT YOUR VPN AND RECONNECT, OR ASK AN ADMIN TO BE ALLOWED.</comment>
+</data>
 <data name="MainMenu.CloseLabel" xml:space="preserve">
   <value>CLOSE</value>
   <comment>CLOSE</comment>
@@ -77278,6 +77286,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.Obj.Vehicle.UH1H.Extinguisher.Open.Verb.Toggle" xml:space="preserve">
   <value>close</value>
   <comment>close</comment>
+</data>
+<data name="Def.Obj.Structure.Wreck.UH1H.Horizontal.DisplayName" xml:space="preserve">
+  <value>UH-1H wreck</value>
+  <comment>UH-1H wreck</comment>
+</data>
+<data name="Def.Obj.Structure.Wreck.UH1H.Vertical.DisplayName" xml:space="preserve">
+  <value>UH-1H wreck</value>
+  <comment>UH-1H wreck</comment>
 </data>
 <data name="Def.Obj.Item.FlamerTurretKit.Gun.DisplayName" xml:space="preserve">
   <value>flamethrower turret</value>
