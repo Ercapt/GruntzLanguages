@@ -76731,22 +76731,6 @@ The file is looked up beside this language file first, then under the game's Con
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
-<data name="Def.Obj.Item.Storage.Box.M2Kit.DisplayName" xml:space="preserve">
-  <value>M2 케이스</value>
-  <comment>M2 case</comment>
-</data>
-<data name="Def.Obj.Item.Storage.Box.M2Kit.Verb.PickUp" xml:space="preserve">
-  <value>줍기</value>
-  <comment>pick up</comment>
-</data>
-<data name="Def.Obj.Item.Storage.Box.M2Kit.Open.DisplayName" xml:space="preserve">
-  <value>M2 케이스</value>
-  <comment>M2 case</comment>
-</data>
-<data name="Def.Obj.Item.Storage.Box.M2Kit.Open.Verb.PickUp" xml:space="preserve">
-  <value>줍기</value>
-  <comment>pick up</comment>
-</data>
 <data name="Def.Obj.Structure.Largecrate.M2.Descending.DisplayName" xml:space="preserve">
   <value>M2 crate</value>
   <comment>M2 crate</comment>
@@ -77199,21 +77183,25 @@ The file is looked up beside this language file first, then under the game's Con
   <value>pick up</value>
   <comment>pick up</comment>
 </data>
-<data name="Def.Obj.Item.Storage.Box.Mk19Kit.DisplayName" xml:space="preserve">
-  <value>MK19 case</value>
-  <comment>MK19 case</comment>
+<data name="Def.Obj.Structure.Largecrate.Mk19.Descending.DisplayName" xml:space="preserve">
+  <value>MK19 crate</value>
+  <comment>MK19 crate</comment>
 </data>
-<data name="Def.Obj.Item.Storage.Box.Mk19Kit.Verb.PickUp" xml:space="preserve">
-  <value>pick up</value>
-  <comment>pick up</comment>
+<data name="Def.Obj.Structure.Largecrate.Mk19.DisplayName" xml:space="preserve">
+  <value>MK19 crate</value>
+  <comment>MK19 crate</comment>
 </data>
-<data name="Def.Obj.Item.Storage.Box.Mk19Kit.Open.DisplayName" xml:space="preserve">
-  <value>MK19 case</value>
-  <comment>MK19 case</comment>
+<data name="Def.Obj.Structure.Largecrate.Mk19.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
 </data>
-<data name="Def.Obj.Item.Storage.Box.Mk19Kit.Open.Verb.PickUp" xml:space="preserve">
-  <value>pick up</value>
-  <comment>pick up</comment>
+<data name="Def.Obj.Structure.Largecrate.Mk19.Open.DisplayName" xml:space="preserve">
+  <value>MK19 crate</value>
+  <comment>MK19 crate</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.Mk19.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
 </data>
 <data name="Def.Obj.Vehicle.Light.Hidden.Red.DisplayName" xml:space="preserve">
   <value>hidden light</value>
