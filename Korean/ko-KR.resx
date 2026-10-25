@@ -2071,6 +2071,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>들여다보기</value>
   <comment>look through</comment>
 </data>
+<data name="HoverName.OwnerPossessive" xml:space="preserve">
+  <value>{OWNER}'s {NAME}</value>
+  <comment>{OWNER}'s {NAME}</comment>
+</data>
 <data name="HoverName.OpenBracket" xml:space="preserve">
   <value> [</value>
   <comment> [</comment>
