@@ -76747,6 +76747,26 @@ The file is looked up beside this language file first, then under the game's Con
   <value>pick up</value>
   <comment>pick up</comment>
 </data>
+<data name="Def.Obj.Structure.Largecrate.M2.Descending.DisplayName" xml:space="preserve">
+  <value>M2 crate</value>
+  <comment>M2 crate</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.M2.DisplayName" xml:space="preserve">
+  <value>M2 crate</value>
+  <comment>M2 crate</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.M2.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.M2.Open.DisplayName" xml:space="preserve">
+  <value>M2 crate</value>
+  <comment>M2 crate</comment>
+</data>
+<data name="Def.Obj.Structure.Largecrate.M2.Open.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
+</data>
 <data name="Def.Obj.Structure.Manhole.DisplayName" xml:space="preserve">
   <value>Sewer Manhole</value>
   <comment>Sewer Manhole</comment>
