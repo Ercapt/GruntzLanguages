@@ -9615,9 +9615,13 @@ The file is looked up beside this language file first, then under the game's Con
   <value>WORKS ON</value>
   <comment>WORKS ON</comment>
 </data>
-<data name="Codex.Sect.InBody" xml:space="preserve">
-  <value>IN THE BODY</value>
-  <comment>IN THE BODY</comment>
+<data name="Codex.Sect.Metabolism" xml:space="preserve">
+  <value>METABOLISM</value>
+  <comment>METABOLISM</comment>
+</data>
+<data name="Codex.Sect.Administration" xml:space="preserve">
+  <value>ADMINISTRATION</value>
+  <comment>ADMINISTRATION</comment>
 </data>
 <data name="Codex.Sect.Activates" xml:space="preserve">
   <value>ACTIVATES</value>
@@ -9627,25 +9631,9 @@ The file is looked up beside this language file first, then under the game's Con
   <value>RATE</value>
   <comment>RATE</comment>
 </data>
-<data name="Codex.Row.Route" xml:space="preserve">
-  <value>ROUTE</value>
-  <comment>ROUTE</comment>
-</data>
 <data name="Codex.Row.Works" xml:space="preserve">
   <value>WORKS</value>
   <comment>WORKS</comment>
-</data>
-<data name="Codex.Route.Any" xml:space="preserve">
-  <value>ANY</value>
-  <comment>ANY</comment>
-</data>
-<data name="Codex.Route.AnyTail" xml:space="preserve">
-  <value>SWALLOWED, IT REACHES THE BLOOD AFTER {SECONDS}S</value>
-  <comment>SWALLOWED, IT REACHES THE BLOOD AFTER {SECONDS}S</comment>
-</data>
-<data name="Codex.Route.InjectionTail" xml:space="preserve">
-  <value>A SWALLOWED DOSE IS LOST, NO PILLS</value>
-  <comment>A SWALLOWED DOSE IS LOST, NO PILLS</comment>
 </data>
 <data name="Codex.Works.Anywhere" xml:space="preserve">
   <value>ANYWHERE</value>
@@ -9678,6 +9666,82 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Codex.RateLine" xml:space="preserve">
   <value>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</value>
   <comment>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</comment>
+</data>
+<data name="Codex.Col.Mechanism" xml:space="preserve">
+  <value>MECHANISM</value>
+  <comment>MECHANISM</comment>
+</data>
+<data name="Codex.Col.Via" xml:space="preserve">
+  <value>VIA</value>
+  <comment>VIA</comment>
+</data>
+<data name="Codex.Col.Takes" xml:space="preserve">
+  <value>TAKES</value>
+  <comment>TAKES</comment>
+</data>
+<data name="Codex.Mechanism.Injected" xml:space="preserve">
+  <value>INJECTED</value>
+  <comment>INJECTED</comment>
+</data>
+<data name="Codex.Mechanism.Swallowed" xml:space="preserve">
+  <value>SWALLOWED</value>
+  <comment>SWALLOWED</comment>
+</data>
+<data name="Codex.Mechanism.Dripped" xml:space="preserve">
+  <value>DRIPPED</value>
+  <comment>DRIPPED</comment>
+</data>
+<data name="Codex.Mechanism.Pumped" xml:space="preserve">
+  <value>PUMPED</value>
+  <comment>PUMPED</comment>
+</data>
+<data name="Codex.Mechanism.Transfused" xml:space="preserve">
+  <value>TRANSFUSED</value>
+  <comment>TRANSFUSED</comment>
+</data>
+<data name="Codex.Mechanism.Intravenous" xml:space="preserve">
+  <value>INTRAVENOUS</value>
+  <comment>INTRAVENOUS</comment>
+</data>
+<data name="Codex.Takes.AtOnce" xml:space="preserve">
+  <value>AT ONCE</value>
+  <comment>AT ONCE</comment>
+</data>
+<data name="Codex.Takes.Seconds" xml:space="preserve">
+  <value>{SECONDS}S</value>
+  <comment>{SECONDS}S</comment>
+</data>
+<data name="Codex.Takes.Every" xml:space="preserve">
+  <value>{UNITS}U EVERY {SECONDS}S</value>
+  <comment>{UNITS}U EVERY {SECONDS}S</comment>
+</data>
+<data name="Codex.Takes.SetOnBag" xml:space="preserve">
+  <value>{UNITS}U EVERY {SECONDS}S, SET ON THE BAG</value>
+  <comment>{UNITS}U EVERY {SECONDS}S, SET ON THE BAG</comment>
+</data>
+<data name="Codex.Takes.Pumped" xml:space="preserve">
+  <value>{SMALL}U OR {LARGE}U AT ONCE</value>
+  <comment>{SMALL}U OR {LARGE}U AT ONCE</comment>
+</data>
+<data name="Codex.Takes.Lost" xml:space="preserve">
+  <value>LOST</value>
+  <comment>LOST</comment>
+</data>
+<data name="Codex.Family.Injectors" xml:space="preserve">
+  <value>INJECTORS</value>
+  <comment>INJECTORS</comment>
+</data>
+<data name="Codex.Family.Pills" xml:space="preserve">
+  <value>PILLS</value>
+  <comment>PILLS</comment>
+</data>
+<data name="Codex.Family.Food" xml:space="preserve">
+  <value>FOOD</value>
+  <comment>FOOD</comment>
+</data>
+<data name="Codex.Family.Drinks" xml:space="preserve">
+  <value>DRINKS</value>
+  <comment>DRINKS</comment>
 </data>
 <data name="Codex.Item.Tiny" xml:space="preserve">
   <value>TINY</value>
@@ -13458,6 +13522,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Def.TestBloodBag.Twinless.DisplayName" xml:space="preserve">
   <value>test blood bag</value>
   <comment>test blood bag</comment>
+</data>
+<data name="Def.TestDripBag.DisplayName" xml:space="preserve">
+  <value>test drip bag</value>
+  <comment>test drip bag</comment>
+</data>
+<data name="Def.TestDripBag.Draw.DisplayName" xml:space="preserve">
+  <value>test drip bag</value>
+  <comment>test drip bag</comment>
 </data>
 <data name="Def.TestDialysis.DisplayName" xml:space="preserve">
   <value>test dialysis machine</value>
