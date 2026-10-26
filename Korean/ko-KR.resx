@@ -867,6 +867,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{TARGET}이(가) 윙 소리를 내며 미끄러지듯 열립니다.</value>
   <comment>The {TARGET} buzzes and slides open.</comment>
 </data>
+<data name="Chat.CryoHealed" xml:space="preserve">
+  <value>The {TARGET} pings: patient's external wounds are healed.</value>
+  <comment>The {TARGET} pings: patient's external wounds are healed.</comment>
+</data>
+<data name="Chat.CryoEjected" xml:space="preserve">
+  <value>The {TARGET} beeps: patient is dead. Ejecting.</value>
+  <comment>The {TARGET} beeps: patient is dead. Ejecting.</comment>
+</data>
 <data name="Chat.ApcCoverLocked" xml:space="preserve">
   <value>{TARGET}의 덮개가 잠겨 있어 열 수 없습니다.</value>
   <comment>The {TARGET}'s cover is locked and cannot be opened.</comment>
@@ -1223,6 +1231,26 @@ The file is looked up beside this language file first, then under the game's Con
   <value> 쪽에서 말소리가 나지만 들리지 않습니다.</value>
   <comment> talks but you cannot hear them.</comment>
 </data>
+<data name="Chat.SleepDeaf" xml:space="preserve">
+  <value>Someone near talks but you cannot hear them.</value>
+  <comment>Someone near talks but you cannot hear them.</comment>
+</data>
+<data name="Chat.SleepMutter" xml:space="preserve">
+  <value>You mutter something about... {TEXT}</value>
+  <comment>You mutter something about... {TEXT}</comment>
+</data>
+<data name="Chat.SleepNear" xml:space="preserve">
+  <value>You hear someone near you say something... {TEXT}</value>
+  <comment>You hear someone near you say something... {TEXT}</comment>
+</data>
+<data name="Chat.SleepWord" xml:space="preserve">
+  <value>...You hear something about... {TEXT}</value>
+  <comment>...You hear something about... {TEXT}</comment>
+</data>
+<data name="Chat.SleepFaint" xml:space="preserve">
+  <value>...You almost hear someone talking...</value>
+  <comment>...You almost hear someone talking...</comment>
+</data>
 <data name="Chat.EmoteHelpPrefix" xml:space="preserve">
   <value>사용 가능한 이모트입니다. *이모트이름 형식으로 말해 사용하세요:</value>
   <comment>Available emotes, say *emote to use one:</comment>
@@ -1414,6 +1442,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="HoverVerbLabels.SleeperWindow" xml:space="preserve">
   <value>조작</value>
   <comment>operate</comment>
+</data>
+<data name="HoverVerbLabels.CryoWindow" xml:space="preserve">
+  <value>read the patient</value>
+  <comment>read the patient</comment>
 </data>
 <data name="HoverVerbLabels.PodLoad" xml:space="preserve">
   <value>넣기</value>
@@ -9583,6 +9615,70 @@ The file is looked up beside this language file first, then under the game's Con
   <value>작업 대상</value>
   <comment>WORKS ON</comment>
 </data>
+<data name="Codex.Sect.InBody" xml:space="preserve">
+  <value>IN THE BODY</value>
+  <comment>IN THE BODY</comment>
+</data>
+<data name="Codex.Sect.Activates" xml:space="preserve">
+  <value>ACTIVATES</value>
+  <comment>ACTIVATES</comment>
+</data>
+<data name="Codex.Row.Rate" xml:space="preserve">
+  <value>RATE</value>
+  <comment>RATE</comment>
+</data>
+<data name="Codex.Row.Route" xml:space="preserve">
+  <value>ROUTE</value>
+  <comment>ROUTE</comment>
+</data>
+<data name="Codex.Row.Works" xml:space="preserve">
+  <value>WORKS</value>
+  <comment>WORKS</comment>
+</data>
+<data name="Codex.Route.Any" xml:space="preserve">
+  <value>ANY</value>
+  <comment>ANY</comment>
+</data>
+<data name="Codex.Route.AnyTail" xml:space="preserve">
+  <value>SWALLOWED, IT REACHES THE BLOOD AFTER {SECONDS}S</value>
+  <comment>SWALLOWED, IT REACHES THE BLOOD AFTER {SECONDS}S</comment>
+</data>
+<data name="Codex.Route.InjectionTail" xml:space="preserve">
+  <value>A SWALLOWED DOSE IS LOST, NO PILLS</value>
+  <comment>A SWALLOWED DOSE IS LOST, NO PILLS</comment>
+</data>
+<data name="Codex.Works.Anywhere" xml:space="preserve">
+  <value>ANYWHERE</value>
+  <comment>ANYWHERE</comment>
+</data>
+<data name="Codex.Works.OnlyIn" xml:space="preserve">
+  <value>ONLY IN A</value>
+  <comment>ONLY IN A</comment>
+</data>
+<data name="Codex.Works.Tail" xml:space="preserve">
+  <value>x{MULTIPLIER} THERE // BURNS OFF UNUSED ELSEWHERE</value>
+  <comment>x{MULTIPLIER} THERE // BURNS OFF UNUSED ELSEWHERE</comment>
+</data>
+<data name="Codex.Limits.Cryo" xml:space="preserve">
+  <value>CRYO CELL</value>
+  <comment>CRYO CELL</comment>
+</data>
+<data name="Codex.Limits.Inject" xml:space="preserve">
+  <value>INJECT ONLY</value>
+  <comment>INJECT ONLY</comment>
+</data>
+<data name="Codex.Col.Limits" xml:space="preserve">
+  <value>LIMITS</value>
+  <comment>LIMITS</comment>
+</data>
+<data name="Codex.InertInBody" xml:space="preserve">
+  <value>NONE. INERT IN A BODY.</value>
+  <comment>NONE. INERT IN A BODY.</comment>
+</data>
+<data name="Codex.RateLine" xml:space="preserve">
+  <value>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</value>
+  <comment>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</comment>
+</data>
 <data name="Codex.Item.Tiny" xml:space="preserve">
   <value>아주 작음</value>
   <comment>TINY</comment>
@@ -9941,7 +10037,7 @@ The file is looked up beside this language file first, then under the game's Con
 </data>
 <data name="Codex.Property.Alcoholic" xml:space="preserve">
   <value>INTOXICATES</value>
-  <comment>INTOXICATES</comment>
+  <comment>INTOXICATES, DULLS PAIN BY DRUNKENNESS</comment>
 </data>
 <data name="Codex.Property.Focusing" xml:space="preserve">
   <value>SOBERS UP</value>
@@ -9950,6 +10046,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Codex.Property.Narcotic" xml:space="preserve">
   <value>CLOUDS THE MIND</value>
   <comment>CLOUDS THE MIND</comment>
+</data>
+<data name="Codex.Property.Cryometabolizing" xml:space="preserve">
+  <value>ONLY IN A CRYO CELL</value>
+  <comment>ONLY IN A CRYO CELL</comment>
+</data>
+<data name="Codex.Property.Intravenous" xml:space="preserve">
+  <value>INJECTION ONLY</value>
+  <comment>INJECTION ONLY</comment>
 </data>
 <data name="Codex.Surgery.Stats" xml:space="preserve">
   <value>능력치</value>
@@ -22731,6 +22835,26 @@ The file is looked up beside this language file first, then under the game's Con
   <value>냉동 캡슐</value>
   <comment>cryo cell</comment>
 </data>
+<data name="Def.Obj.Structure.Machinery.CryoCell.Verb.Toggle" xml:space="preserve">
+  <value>close</value>
+  <comment>close</comment>
+</data>
+<data name="Def.Obj.Structure.Machinery.CryoCell.Closed.DisplayName" xml:space="preserve">
+  <value>cryo cell</value>
+  <comment>cryo cell</comment>
+</data>
+<data name="Def.Obj.Structure.Machinery.CryoCell.Closed.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
+<data name="Def.Obj.Structure.Machinery.CryoCell.Occupied.DisplayName" xml:space="preserve">
+  <value>cryo cell</value>
+  <comment>cryo cell</comment>
+</data>
+<data name="Def.Obj.Structure.Machinery.CryoCell.Occupied.Verb.Toggle" xml:space="preserve">
+  <value>open</value>
+  <comment>open</comment>
+</data>
 <data name="Def.Obj.Structure.Machinery.CryobagRecycler.DisplayName" xml:space="preserve">
   <value>냉동 백 재활용기</value>
   <comment>cryogenic bag recycler</comment>
@@ -32176,14 +32300,6 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>spent shell</comment>
 </data>
 <data name="Def.Obj.Item.AmmoCasing.Shell.Verb.PickUp" xml:space="preserve">
-  <value>줍기</value>
-  <comment>pick up</comment>
-</data>
-<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Flammenwerfer.Survivor.DisplayName" xml:space="preserve">
-  <value>FW3 중화염 소각기 탱크</value>
-  <comment>FW3 heavy incinerator tank</comment>
-</data>
-<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Flammenwerfer.Survivor.Verb.PickUp" xml:space="preserve">
   <value>줍기</value>
   <comment>pick up</comment>
 </data>
@@ -77411,19 +77527,19 @@ The file is looked up beside this language file first, then under the game's Con
   <value>pick up</value>
   <comment>pick up</comment>
 </data>
-<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.DisplayName" xml:space="preserve">
-  <value>flamethrower turret fuel drum</value>
-  <comment>flamethrower turret fuel drum</comment>
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Drum.DisplayName" xml:space="preserve">
+  <value>flamethrower fuel drum</value>
+  <comment>flamethrower fuel drum</comment>
 </data>
-<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.Verb.PickUp" xml:space="preserve">
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Drum.Verb.PickUp" xml:space="preserve">
   <value>pick up</value>
   <comment>pick up</comment>
 </data>
-<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.Empty.DisplayName" xml:space="preserve">
-  <value>flamethrower turret fuel drum</value>
-  <comment>flamethrower turret fuel drum</comment>
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Drum.Empty.DisplayName" xml:space="preserve">
+  <value>flamethrower fuel drum</value>
+  <comment>flamethrower fuel drum</comment>
 </data>
-<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Turret.Empty.Verb.PickUp" xml:space="preserve">
+<data name="Def.Obj.Item.AmmoMagazine.FlamerTank.Drum.Empty.Verb.PickUp" xml:space="preserve">
   <value>pick up</value>
   <comment>pick up</comment>
 </data>
