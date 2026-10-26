@@ -495,6 +495,18 @@ The file is looked up beside this language file first, then under the game's Con
   <value>낮음</value>
   <comment>Low</comment>
 </data>
+<data name="Enum.EffectsQuality.High" xml:space="preserve">
+  <value>High</value>
+  <comment>High</comment>
+</data>
+<data name="Enum.EffectsQuality.Medium" xml:space="preserve">
+  <value>Medium</value>
+  <comment>Medium</comment>
+</data>
+<data name="Enum.EffectsQuality.Low" xml:space="preserve">
+  <value>Low</value>
+  <comment>Low</comment>
+</data>
 <data name="Enum.FrameQueueLimit.Unlimited" xml:space="preserve">
   <value>무제한</value>
   <comment>Unlimited</comment>
@@ -754,6 +766,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Chat.Roll" xml:space="preserve">
   <value>{ACTOR}이(가) {TARGET}을(를) 똑바로 눕힙니다.</value>
   <comment>{ACTOR} rolls the {TARGET} onto their back.</comment>
+</data>
+<data name="Chat.CarryStart" xml:space="preserve">
+  <value>{ACTOR} starts loading the {TARGET} onto their back.</value>
+  <comment>{ACTOR} starts loading the {TARGET} onto their back.</comment>
+</data>
+<data name="Chat.Carry" xml:space="preserve">
+  <value>{ACTOR} loads the {TARGET} onto their back.</value>
+  <comment>{ACTOR} loads the {TARGET} onto their back.</comment>
 </data>
 <data name="Chat.DefibCharge" xml:space="preserve">
   <value>{ACTOR}이(가) 제세동기 패들을 충전합니다.</value>
@@ -1487,6 +1507,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>눕히기</value>
   <comment>roll</comment>
 </data>
+<data name="HoverVerbLabels.FiremanCarry" xml:space="preserve">
+  <value>carry</value>
+  <comment>carry</comment>
+</data>
 <data name="HoverVerbLabels.RollFire" xml:space="preserve">
   <value>굴러서 불 끄기</value>
   <comment>roll out fire</comment>
@@ -2111,6 +2135,14 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{TOOL} + {TOOL2}(으)로 수리</value>
   <comment>use {TOOL} + {TOOL2} to repair</comment>
 </data>
+<data name="HoverName.UseHintRepairCounted" xml:space="preserve">
+  <value>use {COUNT} {TOOL} to repair</value>
+  <comment>use {COUNT} {TOOL} to repair</comment>
+</data>
+<data name="HoverName.UseHintRepairCountedTwo" xml:space="preserve">
+  <value>use {COUNT} {TOOL} + {TOOL2} to repair</value>
+  <comment>use {COUNT} {TOOL} + {TOOL2} to repair</comment>
+</data>
 <data name="HoverName.UseHintBuild" xml:space="preserve">
   <value>{TOOL}(으)로 건설</value>
   <comment>use {TOOL} to build</comment>
@@ -2507,6 +2539,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>끄는 중</value>
   <comment>PULLING</comment>
 </data>
+<data name="Moodlet.Title.Carrying" xml:space="preserve">
+  <value>CARRYING</value>
+  <comment>CARRYING</comment>
+</data>
 <data name="Moodlet.Title.Wielded" xml:space="preserve">
   <value>양손 파지</value>
   <comment>WIELDED</comment>
@@ -2783,6 +2819,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>무언가를 끄는 중</value>
   <comment>Dragging something</comment>
 </data>
+<data name="Moodlet.Flavor.Carrying" xml:space="preserve">
+  <value>Carrying someone</value>
+  <comment>Carrying someone</comment>
+</data>
 <data name="Moodlet.Flavor.Wielded" xml:space="preserve">
   <value>무기를 양손으로 쥠</value>
   <comment>Wielding a weapon</comment>
@@ -3039,6 +3079,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>{NAME} 때문에 무거움</value>
   <comment>Weighed down by {NAME}</comment>
 </data>
+<data name="Moodlet.Flavor.Carrying.Template" xml:space="preserve">
+  <value>Carrying {NAME}</value>
+  <comment>Carrying {NAME}</comment>
+</data>
 <data name="Moodlet.Flavor.Wielded.Template" xml:space="preserve">
   <value>{NAME}을(를) 양손으로 쥠</value>
   <comment>Wielding {NAME}</comment>
@@ -3106,6 +3150,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Moodlet.Hint.Pulling" xml:space="preserve">
   <value>끄는 손 슬롯을 클릭해 놓으세요</value>
   <comment>Click the pull hand slot to release</comment>
+</data>
+<data name="Moodlet.Hint.PullingCarry" xml:space="preserve">
+  <value>Click the pull hand slot to carry</value>
+  <comment>Click the pull hand slot to carry</comment>
 </data>
 <data name="Moodlet.Hint.Wielded.Brace" xml:space="preserve">
   <value>양손 파지 키를 눌러 거치를 해제하세요</value>
@@ -3394,6 +3442,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Moodlet.Phrase.MovingUnbucklesYou" xml:space="preserve">
   <value>움직이면 고정이 풀림</value>
   <comment>Moving unbuckles you</comment>
+</data>
+<data name="Moodlet.Phrase.CarryingNoSlowdown" xml:space="preserve">
+  <value>Carried on your back, no drag slowdown</value>
+  <comment>Carried on your back, no drag slowdown</comment>
 </data>
 <data name="Moodlet.Phrase.RollsOnWheelsNoSlowdown" xml:space="preserve">
   <value>바퀴로 굴러가 속도 저하 없음</value>
@@ -4511,6 +4563,22 @@ The file is looked up beside this language file first, then under the game's Con
   <value> 도수 안경이 없으면 흐린 시야, 시야 범위 절반</value>
   <comment> Blurred vision and half sight range without prescription glasses</comment>
 </data>
+<data name="TraitChips.Marker.VehicleRepairToken" xml:space="preserve">
+  <value>VEHICLE REPAIR</value>
+  <comment>VEHICLE REPAIR</comment>
+</data>
+<data name="TraitChips.Marker.VehicleRepairUnit" xml:space="preserve">
+  <value> Welds a damaged vehicle hull back to full with plasteel</value>
+  <comment> Welds a damaged vehicle hull back to full with plasteel</comment>
+</data>
+<data name="TraitChips.Marker.FiremanCarryToken" xml:space="preserve">
+  <value>FIREMAN CARRY</value>
+  <comment>FIREMAN CARRY</comment>
+</data>
+<data name="TraitChips.Marker.FiremanCarryUnit" xml:space="preserve">
+  <value> Loads a lying person onto your back and moves at full pace</value>
+  <comment> Loads a lying person onto your back and moves at full pace</comment>
+</data>
 <data name="ContextMenu.Row.Follow" xml:space="preserve">
   <value>따라가기</value>
   <comment>follow</comment>
@@ -4602,6 +4670,10 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="ContextMenu.Drag" xml:space="preserve">
   <value>끌기</value>
   <comment>Drag</comment>
+</data>
+<data name="ContextMenu.Carry" xml:space="preserve">
+  <value>Carry</value>
+  <comment>Carry</comment>
 </data>
 <data name="ContextMenu.RemoveSplint" xml:space="preserve">
   <value>부목 제거</value>
@@ -7311,6 +7383,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>안개 품질</value>
   <comment>FOG QUALITY</comment>
 </data>
+<data name="Settings.EffectsQualityLabel" xml:space="preserve">
+  <value>EFFECTS QUALITY</value>
+  <comment>EFFECTS QUALITY</comment>
+</data>
 <data name="Settings.TonemapperLabel" xml:space="preserve">
   <value>톤 매퍼</value>
   <comment>TONEMAPPER</comment>
@@ -7730,6 +7806,14 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="LoadoutSelect.RejectNoRespawns" xml:space="preserve">
   <value>you fell this round // no respawns this phase, you may observe</value>
   <comment>you fell this round // no respawns this phase, you may observe</comment>
+</data>
+<data name="LoadoutSelect.RejectLoadoutFull" xml:space="preserve">
+  <value>every slot of that role is held // pick another</value>
+  <comment>every slot of that role is held // pick another</comment>
+</data>
+<data name="LoadoutSelect.FullLabel" xml:space="preserve">
+  <value>FULL</value>
+  <comment>FULL</comment>
 </data>
 <data name="LoadoutSelect.RejectGeneric" xml:space="preserve">
   <value>선택 실패, 다시 시도하세요</value>
@@ -80779,6 +80863,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>척탄병</value>
   <comment>Grenadier</comment>
 </data>
+<data name="Loadout.Marine.Pilot.Name" xml:space="preserve">
+  <value>Pilot</value>
+  <comment>Pilot</comment>
+</data>
 <data name="Loadout.Surgeon.Name" xml:space="preserve">
   <value>외과의</value>
   <comment>Surgeon</comment>
@@ -80822,10 +80910,6 @@ The file is looked up beside this language file first, then under the game's Con
 <data name="Loadout.FireFighter.Name" xml:space="preserve">
   <value>소방관</value>
   <comment>Firefighter</comment>
-</data>
-<data name="Loadout.Sorokyne.Pilot.Name" xml:space="preserve">
-  <value>조종사</value>
-  <comment>Pilot</comment>
 </data>
 <data name="Loadout.Sorokyne.Chef.Name" xml:space="preserve">
   <value>요리사</value>
