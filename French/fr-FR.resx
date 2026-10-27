@@ -571,6 +571,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>High</value>
   <comment>High</comment>
 </data>
+<data name="Enum.DecalMemory.Ultra" xml:space="preserve">
+  <value>Ultra</value>
+  <comment>Ultra</comment>
+</data>
 <data name="Chat.Ignite" xml:space="preserve">
   <value>{ACTOR} lights the {TARGET} with the {USED}.</value>
   <comment>{ACTOR} lights the {TARGET} with the {USED}.</comment>
@@ -8955,10 +8959,6 @@ The file is looked up beside this language file first, then under the game's Con
   <value>Entering world</value>
   <comment>Entering world</comment>
 </data>
-<data name="Loading.StateSoundDecode" xml:space="preserve">
-  <value>Sound decode</value>
-  <comment>Sound decode</comment>
-</data>
 <data name="Loading.StateReadingDefs" xml:space="preserve">
   <value>Reading defs</value>
   <comment>Reading defs</comment>
@@ -9631,6 +9631,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>RATE</value>
   <comment>RATE</comment>
 </data>
+<data name="Codex.Row.Duration" xml:space="preserve">
+  <value>DURATION</value>
+  <comment>DURATION</comment>
+</data>
 <data name="Codex.Row.Works" xml:space="preserve">
   <value>WORKS</value>
   <comment>WORKS</comment>
@@ -9664,8 +9668,12 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>NONE. INERT IN A BODY.</comment>
 </data>
 <data name="Codex.RateLine" xml:space="preserve">
-  <value>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</value>
-  <comment>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</comment>
+  <value>{RATE}U EVERY {SECONDS}S</value>
+  <comment>{RATE}U EVERY {SECONDS}S</comment>
+</data>
+<data name="Codex.DurationLine" xml:space="preserve">
+  <value>10U LASTS {DURATION}</value>
+  <comment>10U LASTS {DURATION}</comment>
 </data>
 <data name="Codex.Col.Mechanism" xml:space="preserve">
   <value>MECHANISM</value>

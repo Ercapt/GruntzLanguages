@@ -571,6 +571,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>High</value>
   <comment>High</comment>
 </data>
+<data name="Enum.DecalMemory.Ultra" xml:space="preserve">
+  <value>Ultra</value>
+  <comment>Ultra</comment>
+</data>
 <data name="Chat.Ignite" xml:space="preserve">
   <value>{ACTOR}이(가) {USED}(으)로 {TARGET}에 불을 붙입니다.</value>
   <comment>{ACTOR} lights the {TARGET} with the {USED}.</comment>
@@ -8955,10 +8959,6 @@ The file is looked up beside this language file first, then under the game's Con
   <value>월드 진입 중</value>
   <comment>Entering world</comment>
 </data>
-<data name="Loading.StateSoundDecode" xml:space="preserve">
-  <value>사운드 디코딩</value>
-  <comment>Sound decode</comment>
-</data>
 <data name="Loading.StateReadingDefs" xml:space="preserve">
   <value>정의 읽는 중</value>
   <comment>Reading defs</comment>
@@ -9631,6 +9631,10 @@ The file is looked up beside this language file first, then under the game's Con
   <value>RATE</value>
   <comment>RATE</comment>
 </data>
+<data name="Codex.Row.Duration" xml:space="preserve">
+  <value>DURATION</value>
+  <comment>DURATION</comment>
+</data>
 <data name="Codex.Row.Works" xml:space="preserve">
   <value>WORKS</value>
   <comment>WORKS</comment>
@@ -9664,8 +9668,12 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>NONE. INERT IN A BODY.</comment>
 </data>
 <data name="Codex.RateLine" xml:space="preserve">
-  <value>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</value>
-  <comment>{RATE}U EVERY {SECONDS}S // 10U LASTS {DURATION}</comment>
+  <value>{RATE}U EVERY {SECONDS}S</value>
+  <comment>{RATE}U EVERY {SECONDS}S</comment>
+</data>
+<data name="Codex.DurationLine" xml:space="preserve">
+  <value>10U LASTS {DURATION}</value>
+  <comment>10U LASTS {DURATION}</comment>
 </data>
 <data name="Codex.Col.Mechanism" xml:space="preserve">
   <value>MECHANISM</value>
