@@ -5304,7 +5304,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>CHEMMASTER 3000</comment>
 </data>
 <data name="ChemMaster.UnitLine" xml:space="preserve">
-  <value>МЕДИЧНИЙ ПІДРОЗДІЛ W-Y // ФАРМАЦЕВТИЧНИЙ ЗМІШУВАЧ</value>
+  <value>МЕДИЧНИЙ ПІДРОЗДІЛ ВЕ-Ю // ФАРМАЦЕВТИЧНИЙ ЗМІШУВАЧ</value>
   <comment>W-Y MEDICAL DIVISION // PHARMACEUTICAL COMPOUNDER</comment>
 </data>
 <data name="ChemMaster.StatusSection" xml:space="preserve">
@@ -6180,7 +6180,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>OFF</comment>
 </data>
 <data name="Grinder.UnitLine" xml:space="preserve">
-  <value>УНІВЕРСАЛЬНИЙ ПОДРІБНЮВАЧ W-Y KITCHENTECH // БЛОК ПЕРЕРОБКИ 2</value>
+  <value>УНІВЕРСАЛЬНИЙ ПОДРІБНЮВАЧ ВЕ-Ю КУХОНТЕХ // БЛОК ПЕРЕРОБКИ 2</value>
   <comment>W-Y KITCHENTECH ALL-IN-ONE GRINDER // REFINERY BANK 2</comment>
 </data>
 <data name="Grinder.BeakerSection" xml:space="preserve">
@@ -6224,7 +6224,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>STANDBY</comment>
 </data>
 <data name="Grinder.FootLeft" xml:space="preserve">
-  <value>ОС W-Y KITCHENTECH 2.11</value>
+  <value>ОС ВЕ-Ю КУХОНТЕХ 2.11</value>
   <comment>W-Y KITCHENTECH OS 2.11</comment>
 </data>
 <data name="Grinder.HeaderFallback" xml:space="preserve">
@@ -6268,7 +6268,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>SYNTHETIC LIMB PRINTER 2000</comment>
 </data>
 <data name="Bioprinter.UnitLine" xml:space="preserve">
-  <value>БІОФАБРИКА WEYLAND-YUTANI // МОДЕЛЬ SLP-2000</value>
+  <value>БІОФАБРИКА ВЕЙЛАНД-ЮТАНІ // МОДЕЛЬ SLP-2000</value>
   <comment>WEYLAND-YUTANI BIOFAB DIVISION // MODEL SLP-2000</comment>
 </data>
 <data name="Bioprinter.MetalSection" xml:space="preserve">
@@ -6328,7 +6328,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>BANK {COUNT} // IDLE</comment>
 </data>
 <data name="Microwave.UnitLine" xml:space="preserve">
-  <value>W-Y KITCHENTECH // БАНК РЕЦЕПТІВ MU/TH/UR 6500</value>
+  <value>ВЕ-Ю КУХОНТЕХ // БАНК РЕЦЕПТІВ MU/TH/UR 6500</value>
   <comment>W-Y KITCHENTECH // RECIPE BANK MU/TH/UR 6500</comment>
 </data>
 <data name="Microwave.ContentsSection" xml:space="preserve">
@@ -6444,7 +6444,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>SMART CHEMICAL STORAGE</comment>
 </data>
 <data name="SmartFridge.UnitLine" xml:space="preserve">
-  <value>МЕДИЧНИЙ ПІДРОЗДІЛ W-Y // ОХОЛОДЖУВАНИЙ СКЛАД</value>
+  <value>МЕДИЧНИЙ ПІДРОЗДІЛ ВЕ-Ю // ОХОЛОДЖУВАНИЙ СКЛАД</value>
   <comment>W-Y MEDICAL DIVISION // REFRIGERATED INVENTORY</comment>
 </data>
 <data name="SmartFridge.ContentsSection" xml:space="preserve">
@@ -6632,7 +6632,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>HIT THE VENDOR WITH A SPENT BOTTLE TO REFILL IT</comment>
 </data>
 <data name="Vendor.PaymentHint" xml:space="preserve">
-  <value>КОШТИ СПИСУЮТЬСЯ ПІД ЧАС ПОКУПКИ — ВНЕСІТЬ ГОТІВКУ В БУДЬ-ЯКОМУ БАНКОМАТІ W-Y</value>
+  <value>КОШТИ СПИСУЮТЬСЯ ПІД ЧАС ПОКУПКИ — ВНЕСІТЬ ГОТІВКУ В БУДЬ-ЯКОМУ БАНКОМАТІ ВЕ-Ю</value>
   <comment>FUNDS DEBIT ON VEND - DEPOSIT CASH AT ANY W-Y ATM</comment>
 </data>
 <data name="Vendor.EmptyLabel" xml:space="preserve">
@@ -6648,11 +6648,11 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>OUT</comment>
 </data>
 <data name="Vendor.FootLeft" xml:space="preserve">
-  <value>ОС W-Y VENDTECH 4.03</value>
+  <value>ОС ВЕ-Ю VENDTECH 4.03</value>
   <comment>W-Y VENDTECH OS 4.03</comment>
 </data>
 <data name="Vendor.UnitLine" xml:space="preserve">
-  <value>W-Y VENDTECH // {MAP}</value>
+  <value>ВЕ-Ю VENDTECH // {MAP}</value>
   <comment>W-Y VENDTECH // {MAP}</comment>
 </data>
 <data name="Vendor.StockedLine" xml:space="preserve">
@@ -6884,7 +6884,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>Digital Cash Register</comment>
 </data>
 <data name="Register.BrandLine" xml:space="preserve">
-  <value>РОЗДРІБНІ СИСТЕМИ W-Y</value>
+  <value>РОЗДРІБНІ СИСТЕМИ ВЕ-Ю</value>
   <comment>W-Y RETAIL SYSTEMS</comment>
 </data>
 <data name="Register.UnitLine" xml:space="preserve">
@@ -6968,7 +6968,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>TEND CASH</comment>
 </data>
 <data name="Register.TickerLine" xml:space="preserve">
-  <value>РОЗДРІБНИЙ ПІДРОЗДІЛ WEYLAND-YUTANI // ДЯКУЄМО ЗА ПОКУПКУ В W-Y // УСІ ПРОДАЖІ ОСТАТОЧНІ // КАСУ ПЕРЕРАХОВУЮТЬ ПІД ЧАС ЗМІНИ // ВТРАТИ ТОВАРУ — ЦЕ КРАДІЖКА, А КРАДІЖКА — ЗРАДА // ВТРУЧАННЯ В РОБОТУ КАСИ АНУЛЮЄ ВАШЕ СТРАХУВАННЯ ЖИТТЯ</value>
+  <value>РОЗДРІБНИЙ ПІДРОЗДІЛ ВЕЙЛАНД-ЮТАНІ // ДЯКУЄМО ЗА ПОКУПКУ В ВЕ-Ю // УСІ ПРОДАЖІ ОСТАТОЧНІ // КАСУ ПЕРЕРАХОВУЮТЬ ПІД ЧАС ЗМІНИ // ВТРАТИ ТОВАРУ — ЦЕ КРАДІЖКА, А КРАДІЖКА — ЗРАДА // ВТРУЧАННЯ В РОБОТУ КАСИ АНУЛЮЄ ВАШЕ СТРАХУВАННЯ ЖИТТЯ</value>
   <comment>WEYLAND-YUTANI RETAIL DIVISION // THANK YOU FOR SHOPPING W-Y // ALL SALES FINAL // TILL COUNTED AT SHIFT CHANGE // SHRINKAGE IS THEFT AND THEFT IS TREASON // REGISTER TAMPERING VOIDS YOUR LIFE INSURANCE</comment>
 </data>
 <data name="Register.TapeBoot" xml:space="preserve">
@@ -7152,7 +7152,7 @@ The file is looked up beside this language file first, then under the game's Con
   <comment>CREWED BY AVAILABLE PERSONNEL. DEPLOYMENT TIME MAY VARY.</comment>
 </data>
 <data name="Atm.TickerLine" xml:space="preserve">
-  <value>КОРПОРАЦІЯ WEYLAND-YUTANI // СТВОРЮЄМО КРАЩІ СВІТИ // ЗАМОВЛЕННЯ ПОСТАЧАННЯ НЕ ПІДЛЯГАЮТЬ СКАСУВАННЮ // МІСЦЕ ПАДІННЯ КАПСУЛИ ВИЗНАЧАЄ ПОКУПЕЦЬ // ТРИМАЙТЕСЯ ПОДАЛІ ВІД ЗОНИ ДЕСАНТУВАННЯ // W-Y НЕ ВІДПОВІДАЄ ЗА БОЄПРИПАСИ, ВТРАЧЕНІ ЧЕРЕЗ ВОРОЖУ ФАУНУ</value>
+  <value>КОРПОРАЦІЯ ВЕЙЛАНД-ЮТАНІ // СТВОРЮЄМО КРАЩІ СВІТИ // ЗАМОВЛЕННЯ ПОСТАЧАННЯ НЕ ПІДЛЯГАЮТЬ СКАСУВАННЮ // МІСЦЕ ПАДІННЯ КАПСУЛИ ВИЗНАЧАЄ ПОКУПЕЦЬ // ТРИМАЙТЕСЯ ПОДАЛІ ВІД ЗОНИ ДЕСАНТУВАННЯ // W-Y НЕ ВІДПОВІДАЄ ЗА БОЄПРИПАСИ, ВТРАЧЕНІ ЧЕРЕЗ ВОРОЖУ ФАУНУ</value>
   <comment>WEYLAND-YUTANI CORPORATION // BUILDING BETTER WORLDS // SUPPLY REQUISITIONS ARE FINAL // POD IMPACT SITE IS PURCHASER RESPONSIBILITY // STAND CLEAR OF DESIGNATED DROP ZONE // W-Y IS NOT LIABLE FOR ORDNANCE LOST TO HOSTILE FAUNA</comment>
 </data>
 <data name="Atm.ItemOneLine" xml:space="preserve">
